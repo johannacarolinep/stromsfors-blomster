@@ -21,6 +21,10 @@ body {
     flex-direction: column;
 }
 
+.background-white {
+    background-color: white;
+}
+
 h1,
 h2,
 h3,
