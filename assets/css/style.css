@@ -190,20 +190,17 @@ main {
 }
 
 /* Blomsterbud sidan */
-.background-white {
+.blomsterbud-wrapper {
     background-color: white;
-}
-
-#blomsterbud-text-section {
-    width: 90%;
-    margin: 15px auto;
+    width: 93%;
+    margin: 10px auto;
     padding: 10px;
 }
 
 .blomsterbud-image-container {
     width: 70%;
     max-width: 300px;
-    margin: 20px auto;
+    margin: 20px auto 10px auto;
     display: flex;
 }
 
@@ -215,6 +212,18 @@ main {
     border: 8px solid #e6e4dd;
 }
 
+/* Blomsterbud details sektion */
+#blomsterbud-details-section {
+    margin: 25px 15px;
+}
+
+.blomsterbud-details-box {
+    background-color: #e6e4dd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 15px 0;
+}
 
 
 /* Sidfot mobil */
@@ -317,15 +326,35 @@ footer address {
     }
 
     /* Blomsterbud sidan */
+    .blomsterbud-wrapper {
+        margin: 30px auto;
+        padding: 20px;
+    }
+
     #blomsterbud-text-section {
-        width: 90%;
-        margin: 20px auto;
+        margin: auto;
     }
 
     .blomsterbud-image-container {
         width: 40%;
         max-width: 350px;
         margin: 30px auto;
+    }
+
+    /* Blomsterbud details sektion */
+    #blomsterbud-details-section {
+        margin: 50px auto 40px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .blomsterbud-details-box {
+        padding: 20px;
+        width: 31%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
     }
 
     /* Sidfot på tablets */
@@ -435,25 +464,42 @@ footer address {
     }
 
     /* Blomsterbud sidan */
-    #blomsterbud-text-section {
-        width: 90%;
+    .blomsterbud-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .blomsterbud-wrapper {
+        width: 85%;
         max-width: 1200px;
-        margin: 40px auto;
+        margin: 30px auto;
+        padding: 50px;
+    }
+
+    #blomsterbud-text-section {
         display: flex;
     }
 
     .blomsterbud-image-container {
-        width: 30%;
-        max-width: 350px;
+        width: 25%;
         margin: auto;
     }
 
     .blomsterbud-text {
-        width: 70%;
+        width: 75%;
         padding-right: 30px;
-        padding-top: 15px;
     }
 
+    /* Blomsterbud details sektion */
+    #blomsterbud-details-section {
+        margin: 25px auto 0 auto;
+    }
+
+    .blomsterbud-details-box {
+        padding: 30px;
+        width: 29%;
+    }
 
     /* Sidfot på laptops och desktop */
     footer div {
