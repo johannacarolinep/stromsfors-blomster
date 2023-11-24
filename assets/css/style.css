@@ -1,0 +1,405 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap');
+
+/* Tar bort default browser stilar */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Generella stilar på mobil skärm */
+body {
+    /* Body ska alltid ta upp minst hela fönstret */
+    min-height: 100vh;
+    width: 100%;
+    /* Typsnitt, färg, utseende */
+    font-family: 'Lato', sans-serif;
+    color: #2e2e22;
+    background-color: #e6e4dd;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Athiti', sans-serif;
+    margin-bottom: 5px;
+}
+
+/* Sidhuvud mobil */
+header {
+    /* Sitter fast och är positionerat fram på sidan*/
+    position: fixed;
+    z-index: 99;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    width: 100%;
+    box-shadow: 0 1px 2px black;
+    /* Delar upp loggan och hamburgerikonen */
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+/* Stilar för länkar i sidhuvudet */
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Logga mobil */
+.logo-container a {
+    font-family: 'Dancing script', cursive;
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+
+/* Dropdown-meny mobil */
+nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0 0;
+    box-shadow: 0 1px 2px black;
+    /* Gömmer menyn */
+    display: none;
+}
+
+/* Menylänkar mobil */
+.navbar a {
+    padding: 15px 10px;
+    margin: 5px 7px;
+    font-size: 1rem;
+    color: black;
+    background-color: #e6e4dd;
+    text-transform: uppercase;
+}
+
+.navbar a:active {
+    box-shadow: 0 0 5px rgb(87, 83, 82);
+}
+
+/* Markera den aktuella sidan */
+#active {
+    text-decoration: underline;
+}
+
+/* Navbar toggle på mobil */
+#nav-toggle:checked~nav {
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+/* Main på mobil */
+/* Flytta ner main under header */
+main {
+    margin-top: 60px;
+    /* Gör så att main "växer" och trycker ner sidfot till botten */
+    flex: 1 0 auto;
+}
+
+/* Hero section styles */
+#hero {
+    height: 450px;
+    width: 100%;
+    background: url("../images/ivy.webp") no-repeat center center/cover;
+    position: relative;
+}
+
+/* BEHÖVER KOMMENTERAS */
+#hero-text-container {
+    background-color: #ffffff;
+    border: 5px solid #e6e4dd;
+    font-size: 120%;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 40px 20px;
+    min-height: 200px;
+    position: absolute;
+    bottom: 100px;
+    border-radius: 50%;
+    text-align: center;
+    max-width: 515px;
+}
+
+#hero-logo {
+    font-size: 2rem;
+    font-family: 'Dancing script', cursive;
+    margin: 7px 0;
+}
+
+/* Content sektioner */
+.two-columns {
+    width: 95%;
+    margin: auto;
+}
+
+#offers-section {
+    margin-top: 15px;
+}
+
+#offers-section>div,
+#details-section>div {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+/* Bilder i offers section */
+.offers-image-container {
+    width: 85%;
+    max-width: 300px;
+    display: flex;
+    margin: 20px auto;
+}
+
+.offers-image-container img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.offers-text-container {
+    padding-bottom: 10px;
+}
+
+/* Länkar till sociala medier, details */
+#details-section a {
+    text-decoration: none;
+    font-size: 3rem;
+    margin-right: 10px;
+    color: rgb(65, 54, 38);
+}
+
+/* Sidfot mobil */
+footer {
+    background-color: rgb(65, 54, 38);
+    color: #ffffff;
+}
+
+footer div {
+    margin: 1rem 1rem;
+}
+
+footer address {
+    font-style: normal;
+}
+
+/* Stilar för tablets */
+@media screen and (min-width: 768px) {
+
+    /* Sidhuvud på tablets */
+    header {
+        padding: 5px 15px;
+        width: 100%;
+        box-shadow: 0 1px 2px black;
+        /* Delar upp loggan och hamburgerikonen */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Tar fram menyn */
+    nav,
+    #nav-toggle:checked~nav {
+        position: relative;
+        box-shadow: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* Gömmer hamburgerikonen */
+    .nav-toggle-label {
+        display: none;
+    }
+
+    /* Skapa lite utrymme mellan logga och meny */
+    .logo-container {
+        padding-bottom: 5px;
+    }
+
+    /* Main på tablets */
+    /* Flytta ner main under header */
+    main {
+        margin-top: 111px;
+        font-size: 1.1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    /* Hero på tablet BEHÖVER KOMMENTERAS */
+    #hero-text-container {
+        font-size: 120%;
+        width: 70%;
+        max-width: 600px;
+        padding: 40px 20px;
+        min-height: 230px;
+        bottom: 100px;
+    }
+
+    #hero-logo {
+        font-size: 3rem;
+        margin: 10px 0;
+    }
+
+    /* Content sektioner tablets */
+    .two-columns {
+        width: 96%;
+    }
+
+    #offers-section {
+        float: left;
+        width: 68%;
+        padding-right: 15px;
+    }
+
+    #details-section {
+        width: 32%;
+        float: right;
+        margin-top: 15px;
+    }
+
+    /* Sidfot på tablets */
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #footer-copyright {
+        display: flex;
+        align-items: end;
+    }
+
+}
+
+/* Stilar för laptops och desktop */
+@media screen and (min-width: 1050px) {
+
+    /* Visa header på en rad */
+    header {
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    /* Justera så att logga och navigering justeras åt vänster och får rätt bredd */
+    nav {
+        justify-content: left;
+        width: 740px;
+    }
+
+    .logo-container {
+        width: 280px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+    }
+
+    .navbar a:hover {
+        font-weight: 600;
+        background-color: #efede9;
+        box-shadow: 0 0 3px rgb(205, 200, 198);
+    }
+
+    .navbar a:active {
+        box-shadow: 0 0 5px rgb(126, 121, 119);
+    }
+
+    /* Main på laptops och desktop */
+    /* Flytta ner main under header */
+    main {
+        margin-top: 69.5px;
+    }
+
+    /* Content sections på desktop */
+    /* Content sektioner tablets */
+    .two-columns {
+        width: 97%;
+        max-width: 1400px;
+    }
+
+    #offers-section {
+        width: 72%;
+    }
+
+    #details-section {
+        width: 28%;
+        margin-top: 20px;
+    }
+
+    #offers-section {
+        padding-right: 20px;
+        margin-top: 20px;
+    }
+
+    #offers-section>div,
+    #details-section>div {
+        padding: 25px;
+        margin-bottom: 20px;
+    }
+
+    .offers-flex-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Bilder i offers section */
+    .offers-image-container {
+        width: 30%;
+        max-width: 200px;
+        margin: 5px auto;
+    }
+
+    .offers-text-container {
+        width: 70%;
+    }
+
+    .offers-text-container {
+        padding-bottom: 0;
+    }
+
+    .offers-text-right {
+        order: 1;
+        padding-left: 20px;
+    }
+
+    .offers-text-left {
+        padding-right: 20px;
+    }
+
+
+
+
+    /* Sidfot på laptops och desktop */
+    footer div {
+        margin: 1.5rem 1.5rem;
+    }
+
+}
