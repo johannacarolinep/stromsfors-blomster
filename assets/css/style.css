@@ -21,10 +21,6 @@ body {
     flex-direction: column;
 }
 
-.background-white {
-    background-color: white;
-}
-
 h1,
 h2,
 h3,
@@ -193,6 +189,34 @@ main {
     color: rgb(65, 54, 38);
 }
 
+/* Blomsterbud sidan */
+.background-white {
+    background-color: white;
+}
+
+#blomsterbud-text-section {
+    width: 90%;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.blomsterbud-image-container {
+    width: 70%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: flex;
+}
+
+.blomsterbud-image-container img {
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    border-radius: 50%;
+    border: 8px solid #e6e4dd;
+}
+
+
+
 /* Sidfot mobil */
 footer {
     background-color: rgb(65, 54, 38);
@@ -290,6 +314,18 @@ footer address {
         width: 32%;
         float: right;
         margin-top: 15px;
+    }
+
+    /* Blomsterbud sidan */
+    #blomsterbud-text-section {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .blomsterbud-image-container {
+        width: 40%;
+        max-width: 350px;
+        margin: 30px auto;
     }
 
     /* Sidfot på tablets */
@@ -398,7 +434,25 @@ footer address {
         padding-right: 20px;
     }
 
+    /* Blomsterbud sidan */
+    #blomsterbud-text-section {
+        width: 90%;
+        max-width: 1200px;
+        margin: 40px auto;
+        display: flex;
+    }
 
+    .blomsterbud-image-container {
+        width: 30%;
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .blomsterbud-text {
+        width: 70%;
+        padding-right: 30px;
+        padding-top: 15px;
+    }
 
 
     /* Sidfot på laptops och desktop */
