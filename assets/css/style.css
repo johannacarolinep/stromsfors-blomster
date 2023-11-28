@@ -225,6 +225,35 @@ main {
     margin: 15px 0;
 }
 
+/* Om oss */
+.story-article {
+    width: 95%;
+    margin: 15px auto;
+}
+
+.story-article h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.story-text-card {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.story-image-card {
+    width: 100%;
+    display: flex;
+}
+
+.story-image-card img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border: 10px solid white;
+}
+
 
 /* Sidfot mobil */
 footer {
@@ -355,6 +384,95 @@ footer address {
         align-items: center;
         justify-content: center;
         border-radius: 20px;
+    }
+
+    /* Om oss */
+    .story-article {
+        width: 95%;
+        margin: 15px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .story-article h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    .story-text-card {
+        background-color: #ffffff;
+        padding: 10px 30px;
+        width: 55%;
+        margin: 10px 0;
+        border-radius: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.6rem;
+    }
+
+    .story-text-card h2 {
+        margin-bottom: 10px;
+        font-size: 1.6rem;
+    }
+
+    .story-image-card {
+        width: 40%;
+        margin: 10px 0;
+        border-radius: 5%;
+    }
+
+    .story-image-card img {
+        border-radius: 5%;
+    }
+
+    #story-one {
+        order: -1;
+    }
+
+    #story-two {
+        order: 0;
+    }
+
+    #story-three {
+        order: 1;
+    }
+
+    #story-four {
+        order: 2;
+    }
+
+    #story-five {
+        order: 3;
+    }
+
+    #story-six {
+        order: 4;
+    }
+
+    #story-seven {
+        order: 5;
+    }
+
+    #story-eight {
+        order: 6;
+    }
+
+    #story-nine {
+        order: 7;
+    }
+
+    #story-ten {
+        order: 8;
+        width: 97%;
+        border-radius: 0;
+    }
+
+    #story-ten span {
+        font-weight: 700;
     }
 
     /* Sidfot på tablets */
@@ -499,6 +617,13 @@ footer address {
     .blomsterbud-details-box {
         padding: 30px;
         width: 29%;
+    }
+
+    /* Om oss */
+    .story-article {
+        width: 80%;
+        max-width: 1200px;
+        margin: 30px auto;
     }
 
     /* Sidfot på laptops och desktop */
