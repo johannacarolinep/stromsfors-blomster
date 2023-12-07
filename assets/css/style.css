@@ -262,6 +262,35 @@ main {
     border: 10px solid white;
 }
 
+/* Kontakta oss sida */
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-page-section {
+    background-color: white;
+    width: 97%;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid green;
+}
+
+/* Bild på kontakta oss sidan */
+.contact-image-container {
+    width: 60%;
+    max-width: 300px;
+    display: flex;
+    margin: 30px auto;
+}
+
+.contact-image-container img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 
 /* Sidfot mobil */
 footer {
@@ -486,6 +515,9 @@ footer address {
         font-weight: 700;
     }
 
+
+
+
     /* Sidfot på tablets */
     footer {
         display: flex;
@@ -660,6 +692,32 @@ footer address {
     .story-image-card {
         width: 30%;
         border-radius: 20px;
+    }
+
+    /* Kontakta oss sida */
+    .contact-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 85%;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    #form-section {
+        width: 60%;
+        order: -1;
+    }
+
+    #hours-contact-section {
+        width: 100%;
+        display: flex;
+        order: -2;
+    }
+
+    /* Bild på kontakta oss sidan */
+    .contact-image-container {
+        width: 40%;
+        max-width: 500px;
     }
 
     /* Sidfot på laptops och desktop */
