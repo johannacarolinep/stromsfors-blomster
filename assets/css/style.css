@@ -268,28 +268,79 @@ main {
     flex-direction: column;
 }
 
-.contact-page-section {
-    background-color: white;
-    width: 97%;
-    margin: auto;
-    padding: 10px;
-    border: 2px solid green;
-}
-
 /* Bild på kontakta oss sidan */
 .contact-image-container {
-    width: 60%;
-    max-width: 300px;
+    width: 93%;
     display: flex;
-    margin: 30px auto;
+    margin: 20px auto 0 auto;
+    border: 10px solid #ffffff;
 }
 
 .contact-image-container img {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 3 / 1;
+    max-height: 140px;
     object-fit: cover;
-    border-radius: 50%;
 }
+
+.contact-page-section {
+    background-color: white;
+    width: 93%;
+    margin: auto;
+}
+
+#hours-contact-section {
+    margin-bottom: 20px;
+    padding: 0 20px 30px 20px;
+}
+
+.contact-page-hours {
+    padding-bottom: 30px;
+    border-bottom: 3px solid #413626;
+    margin-bottom: 20px;
+}
+
+/* Formulär */
+#form-section {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+#feedback-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#feedback-form label {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+#feedback-form textarea {
+    height: 100px;
+}
+
+#feedback-form input,
+#feedback-form textarea {
+    padding: 5px;
+    font-size: 1rem;
+    margin-top: 5px;
+    font-family: 'Lato', sans-serif;
+}
+
+.submit-button {
+    border: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding: 8px;
+    background-color: rgb(16, 74, 16);
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: 'Athiti', sans-serif;
+    margin: 15px 0;
+}
+
 
 
 /* Sidfot mobil */
@@ -515,7 +566,45 @@ footer address {
         font-weight: 700;
     }
 
+    /* Kontakta oss på tablets */
 
+    /* Bild på kontakta oss sidan */
+    .contact-image-container {
+        width: 93%;
+        max-width: none;
+        display: flex;
+        border: 15px solid #ffffff;
+    }
+
+    .contact-image-container img {
+        width: 100%;
+        aspect-ratio: 4 / 1;
+    }
+
+    .contact-page-section {
+        background-color: white;
+        width: 93%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    #hours-contact-section {
+        margin-bottom: 30px;
+        display: flex;
+    }
+
+    .contact-page-hours {
+        padding-bottom: 0;
+        border-bottom: none;
+        border-right: 2px solid black;
+        margin-bottom: 0;
+        width: 50%;
+        padding-right: 15px;
+    }
+
+    .contact-page-contacts {
+        padding-left: 15px;
+    }
 
 
     /* Sidfot på tablets */
@@ -694,30 +783,40 @@ footer address {
         border-radius: 20px;
     }
 
-    /* Kontakta oss sida */
+    /* Kontakta oss sida desktop */
     .contact-wrapper {
         flex-direction: row;
         flex-wrap: wrap;
         width: 85%;
         margin: auto;
-        justify-content: space-between;
-    }
-
-    #form-section {
-        width: 60%;
-        order: -1;
     }
 
     #hours-contact-section {
         width: 100%;
         display: flex;
         order: -2;
+        margin-top: 40px;
     }
+
+    #form-section {
+        width: 70%;
+        order: -1;
+    }
+
 
     /* Bild på kontakta oss sidan */
     .contact-image-container {
-        width: 40%;
+        width: 30%;
         max-width: 500px;
+        margin-top: 0;
+        margin-bottom: 30px;
+        border: 20px solid white;
+    }
+
+    .contact-image-container img {
+        width: 100%;
+        aspect-ratio: 1 / auto;
+        max-height: none;
     }
 
     /* Sidfot på laptops och desktop */
