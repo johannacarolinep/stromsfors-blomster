@@ -39,10 +39,10 @@
     <!--Sidans huvudsakliga innehåll-->
     <main>
         <div class="contact-wrapper">
-            <div class="contact-image-container">
-                <img alt="" src="assets/images/ivy.webp">
-            </div>
             <section id="hours-contact-section" class="contact-page-section">
+                <div class="contact-first-image-container">
+                    <img alt="" src="assets/images/ivy.webp">
+                </div>
                 <div class="contact-page-hours">
                     <h2>Ordinarie öppettider:</h2>
                     <p>Vardagar: 9-17</p>
@@ -55,7 +55,9 @@
                     <p>Nyårsdagen: stängt</p>
                     <br>
                     <h3>Extraöppet!</h3>
-                    <p>I december har vi öppet till kl 18 på vardagar, så ni hinner hit efter jobbet!</p>
+                    <p>
+                        I december har vi öppet till kl 18 på vardagar, så ni hinner hit efter jobbet!
+                    </p>
                 </div>
                 <div class="contact-page-contacts">
                     <h2>Kontaktuppgifter:</h2>
@@ -63,6 +65,18 @@
                     <p>Email: info@stromsforsblomster.com</p>
                     <br>
                     <p>Address: Hittepåg. 15, 12345 Strömsfors</p>
+                    <br>
+                    <div class="contact-page-social">
+                        <h3>Ni kan också hitta oss på sociala medier:</h3>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                            aria-label="Besök vår Facebook-sida (öppnas i en ny flik)">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                            aria-label="Besök vår Instagram (öppnas i en ny flik)">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
             </section>
             <section id="form-section" class="contact-page-section">
@@ -79,12 +93,17 @@
                         placeholder="Skriv din feedback här..." required></textarea>
                     <br>
                     <p>Det går bra att vara anonym om så önskas. Lämna i så fall fälten nedanför tomma.</p>
-                    <label for="name">Namn:</label>
-                    <input type="text" name="name" id="name" class="text-input" placeholder="Ditt namn">
-                    <br>
-                    <label for="email">Epostaddress:</label>
-                    <input type="email" name="email" id="email" class="text-input" placeholder="email@email.com">
-                    <br>
+                    <div class="form-input-wrapper">
+                        <div>
+                            <label for="name">Namn:</label>
+                            <input type="text" name="name" id="name" class="text-input" placeholder="Ditt namn">
+                        </div>
+                        <div>
+                            <label for="email">Epostaddress:</label>
+                            <input type="email" name="email" id="email" class="text-input"
+                                placeholder="email@email.com">
+                        </div>
+                    </div>
                     <button type="submit" class="submit-button" aria-label="Skicka feedback">
                         Skicka
                     </button>
