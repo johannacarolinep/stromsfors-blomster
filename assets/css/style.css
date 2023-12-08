@@ -233,6 +233,81 @@ main {
     text-transform: uppercase;
 }
 
+/* Blomsterarrangemang */
+#binderi-intro-section,
+#brollop-section,
+#begravn-section {
+    width: 93%;
+    margin: auto;
+}
+
+#binderi-intro-section {
+    background-color: white;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+.binderi-top-container {
+    padding: 15px;
+}
+
+.binderi-image-container {
+    display: flex;
+    width: 75%;
+    max-width: 300px;
+    margin: 15px auto 0 auto;
+}
+
+.binderi-image-container img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.binderi-intro-boxes div {
+    background-color: #efede9;
+    width: 92%;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.binderi-intro-boxes h2 {
+    font-size: 1.3rem;
+}
+
+.binderi-box-link {
+    margin-top: 15px;
+}
+
+.binderi-box-link a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #514330;
+}
+
+.binderi-box-link a:hover {
+    text-decoration: underline;
+}
+
+/* Bröllop */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-image-container {
+    width: 50%;
+    aspect-ratio: 1/1;
+    display: flex;
+}
+
+.gallery-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 /* Om oss */
 .story-article {
     width: 95%;
@@ -539,6 +614,42 @@ footer address {
         align-items: center;
         justify-content: center;
         border-radius: 20px;
+    }
+
+    /* Blomsterarrangemang */
+    #binderi-intro-section,
+    #brollop-section,
+    #begravn-section {
+        width: 95%;
+    }
+
+    #binderi-intro-section {
+        margin-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    .binderi-top-container {
+        width: 92%;
+        margin: auto;
+        padding: 15px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .binderi-image-container {
+        margin-left: 20px;
+    }
+
+    .binderi-intro-boxes div {
+        background-color: #efede9;
+        width: 92%;
+        margin: 20px auto;
+        padding: 25px 20px;
+    }
+
+    .binderi-box-link {
+        margin-top: 20px;
     }
 
     /* Om oss */
@@ -868,6 +979,45 @@ footer address {
     .blomsterbud-details-box {
         padding: 30px;
         width: 29%;
+    }
+
+    /* Blomsterarrangemang */
+    #binderi-intro-section,
+    #brollop-section,
+    #begravn-section {
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    #binderi-intro-section {
+        padding: 10px 30px 30px 30px;
+    }
+
+    .binderi-top-container {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .binderi-intro-text {
+        width: 55%;
+        font-size: 1.3rem;
+    }
+
+    .binderi-image-container {
+        margin: 0;
+        width: 40%;
+        max-width: 450px;
+    }
+
+    .binderi-intro-boxes {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .binderi-intro-boxes div {
+        width: 31%;
+        margin: 20px auto;
+        padding: 30px 20px;
     }
 
     /* Om oss */
