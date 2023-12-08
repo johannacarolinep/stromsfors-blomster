@@ -263,6 +263,7 @@ main {
 }
 
 /* Kontakta oss sida */
+/* Behållare för båda sektionerna */
 .contact-wrapper {
     display: flex;
     flex-direction: column;
@@ -273,54 +274,89 @@ main {
 /* Sektion med öppettider och kontaktuppgifter */
 #hours-contact-section {
     background-color: white;
+    /* Skapar avstånd till nästa sektion */
     margin-bottom: 20px;
-    padding: 15px;
 }
 
+/* Bild i första sektionen */
 .contact-first-image-container {
     width: 100%;
+    aspect-ratio: 6 / 1;
     display: flex;
+    padding-top: 10px;
 }
 
 .contact-first-image-container img {
     width: 100%;
-    aspect-ratio: 3 / 1;
-    max-height: 140px;
     object-fit: cover;
 }
 
+.hours-contact-text-content {
+    padding: 15px;
+}
+
 .contact-page-hours {
-    padding: 15px 5px;
-    border-bottom: 3px solid #413626;
+    border-bottom: 3px solid #514330;
+    padding-bottom: 15px;
 }
 
 .contact-page-contacts {
-    padding: 15px 5px;
+    padding: 15px 0;
 }
 
 .contact-page-social {
-    border-top: 3px solid #2e2e22;
-    padding-top: 10px;
+    border-top: 3px solid #514330;
+    padding-top: 15px;
 }
 
 .contact-page-social a {
     text-decoration: none;
-    font-size: 2.8rem;
-    color: #2e2e22;
+    color: #514330;
     margin-right: 20px;
+}
+
+.contact-page-social i {
     margin-top: 15px;
+    font-size: 2.8rem;
 }
 
 /* Formulär */
 #form-section {
     background-color: white;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 15px;
+}
+
+#form-section h2 {
+    text-transform: uppercase;
+    border-bottom: 3px solid #514330;
+}
+
+.form-image-container {
+    width: 50%;
+    max-width: 300px;
+    display: flex;
+    margin: 20px auto;
+    border-radius: 50%;
+    padding: 5px;
+    border: 3px solid #0d3e16;
+}
+
+.form-image-container img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 #feedback-form {
     display: flex;
     flex-direction: column;
+}
+
+.form-intro {
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .form-input-wrapper div {
@@ -347,11 +383,13 @@ main {
 }
 
 .submit-button {
+    cursor: pointer;
     border: none;
+    outline: none;
     font-size: 1.3rem;
     text-transform: uppercase;
     padding: 8px;
-    background-color: rgb(16, 74, 16);
+    background-color: rgb(18, 85, 18);
     color: #ffffff;
     font-weight: 500;
     letter-spacing: 2px;
@@ -359,7 +397,14 @@ main {
     margin: 15px 0;
 }
 
+.submit-button:hover {
+    box-shadow: 10px 10px 30px #bcb9b9;
+}
 
+.submit-button:active {
+    box-shadow: 10px 10px 15px #959292;
+    background-color: rgb(14, 64, 14);
+}
 
 /* Sidfot mobil */
 footer {
@@ -600,6 +645,13 @@ footer address {
 
     .contact-first-image-container {
         width: 100%;
+        aspect-ratio: 7 / 1;
+    }
+
+    .hours-contact-text-content {
+        padding: 15px 20px;
+        display: flex;
+        width: 100%;
     }
 
     .contact-page-hours {
@@ -610,18 +662,49 @@ footer address {
     }
 
     .contact-page-contacts {
+        padding-top: 0;
         padding-left: 30px;
         width: 50%;
     }
 
     .contact-page-social a {
-        font-size: 3rem;
         margin-right: 30px;
-        margin-top: 20px;
+    }
+
+    .contact-page-social i {
+        margin-top: 15px;
+        font-size: 3rem;
     }
 
     /* Formulär */
+    #form-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #form-section h2 {
+        width: 50%;
+        text-align: center;
+        align-self: center;
+        border-bottom: none;
+        font-size: 2.8rem;
+        margin-left: 30px;
+    }
+
+    .form-image-container {
+        width: 30%;
+    }
+
+    #feedback-form {
+        width: 100%;
+        border-top: 3px solid #514330;
+        padding-top: 15px;
+        margin-top: 15px;
+    }
+
     .form-input-wrapper {
+        margin: 15px 0;
         display: flex;
         flex-direction: row;
     }
@@ -629,8 +712,12 @@ footer address {
     .form-input-wrapper div {
         display: flex;
         flex-direction: row;
-        margin-bottom: 10px;
         margin-right: 30px;
+        width: 50%;
+    }
+
+    .form-input-wrapper label {
+        margin-right: 10px;
     }
 
     /* Sidfot på tablets */
@@ -819,30 +906,68 @@ footer address {
     /* Sektion med öppettider och kontaktuppgifter */
     #hours-contact-section {
         flex-wrap: no-wrap;
-        justify-content: space-between;
+    }
+
+    .hours-contact-text-content {
+        width: 90%;
+        order: -1;
+        padding: 30px 50px 30px 30px;
     }
 
     .contact-page-hours {
-        width: 35%;
-        border-right: 2px solid black;
-        padding-right: 15px;
-        order: -2;
+        width: 50%;
+        border-right: 3px solid #514330;
+        padding-right: 20px;
     }
 
     .contact-page-contacts {
         padding-left: 30px;
-        width: 35%;
-        order: -1;
+        width: 50%;
+    }
+
+    .contact-page-social a {
+        margin-right: 30px;
+    }
+
+    .contact-page-social i {
+        margin-top: 20px;
+        font-size: 3.5rem;
     }
 
     /* Bild på kontakta oss sidan */
     .contact-first-image-container {
-        width: 25%;
+        width: 10%;
+        aspect-ratio: 1 / 4;
+        padding-top: 0;
+        padding-right: 25px;
     }
 
-    .contact-first-image-container img {
-        aspect-ratio: 1 / auto;
-        max-height: none;
+    /* Formulär */
+    #form-section {
+        padding: 30px;
+    }
+
+    #form-section h2 {
+        width: 100%;
+        text-align: left;
+        align-self: center;
+        order: -2;
+        border-bottom: 3px solid #514330;
+        margin-left: 0;
+        font-size: 2rem;
+    }
+
+    .form-image-container {
+        width: 30%;
+        margin: auto;
+        max-width: 350px;
+    }
+
+    #feedback-form {
+        width: 65%;
+        padding-right: 40px;
+        order: -1;
+        border-top: none;
     }
 
 
