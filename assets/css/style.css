@@ -239,16 +239,18 @@ main {
 #begravn-section {
     width: 93%;
     margin: auto;
-}
-
-#binderi-intro-section {
     background-color: white;
     margin-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px;
+    padding-bottom: 25px;
 }
 
-.binderi-top-container {
-    padding: 15px;
+#begravn-section {
+    margin-bottom: 15px;
+}
+
+.binderi-intro-text {
+    font-size: 1.1rem;
 }
 
 .binderi-image-container {
@@ -266,8 +268,8 @@ main {
 
 .binderi-intro-boxes div {
     background-color: #efede9;
-    width: 92%;
-    margin: 15px auto;
+    width: 100%;
+    margin: 15px auto 0 auto;
     padding: 15px;
     border-radius: 3px;
 }
@@ -276,30 +278,33 @@ main {
     font-size: 1.3rem;
 }
 
-.binderi-box-link {
-    margin-top: 15px;
-}
-
-.binderi-box-link a {
+.link-standard {
     text-decoration: none;
     font-weight: 600;
     color: #514330;
 }
 
-.binderi-box-link a:hover {
+.link-standard:hover {
     text-decoration: underline;
 }
 
-/* Bröllop */
+/* Bröllop och begravning */
+.brollop-begr-intro-text {
+    font-size: 1.1rem;
+}
+
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 0;
 }
 
 .gallery-image-container {
-    width: 50%;
+    width: 49%;
     aspect-ratio: 1/1;
     display: flex;
+    margin: 1% 0;
 }
 
 .gallery-image-container img {
@@ -621,20 +626,29 @@ footer address {
     #brollop-section,
     #begravn-section {
         width: 95%;
+        padding: 25px;
+        margin-top: 20px;
+        padding-bottom: 40px;
     }
 
-    #binderi-intro-section {
-        margin-top: 20px;
-        padding-bottom: 15px;
+    #begravn-section {
+        margin-bottom: 20px;
     }
 
     .binderi-top-container {
-        width: 92%;
         margin: auto;
-        padding: 15px;
+        padding: 0 15px 15px 15px;
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
+    }
+
+    .binderi-top-container h1 {
+        font-size: 2.2rem;
+    }
+
+    .binderi-intro-text {
+        font-size: 1.2rem;
     }
 
     .binderi-image-container {
@@ -643,13 +657,27 @@ footer address {
 
     .binderi-intro-boxes div {
         background-color: #efede9;
-        width: 92%;
-        margin: 20px auto;
+        margin: 20px auto 0 auto;
         padding: 25px 20px;
     }
 
-    .binderi-box-link {
-        margin-top: 20px;
+    /* Bröllop och begravning */
+    .brollop-begr-intro-text {
+        font-size: 1.2rem;
+    }
+
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 2% 3%;
+        border: 10px double #e6e4dd;
+        margin: 20px auto;
+    }
+
+    .gallery-image-container {
+        width: 49%;
+        margin: 1% 0;
     }
 
     /* Om oss */
@@ -987,15 +1015,22 @@ footer address {
     #begravn-section {
         width: 90%;
         max-width: 1200px;
+        padding: 30px;
+        margin-top: 40px;
+        padding-bottom: 50px;
     }
 
-    #binderi-intro-section {
-        padding: 10px 30px 30px 30px;
+    #begravn-section {
+        margin-bottom: 40px;
     }
 
     .binderi-top-container {
         width: 100%;
         justify-content: space-around;
+    }
+
+    .binderi-top-container h1 {
+        font-size: 2.5rem;
     }
 
     .binderi-intro-text {
@@ -1005,7 +1040,7 @@ footer address {
 
     .binderi-image-container {
         margin: 0;
-        width: 40%;
+        width: 35%;
         max-width: 450px;
     }
 
@@ -1016,8 +1051,27 @@ footer address {
 
     .binderi-intro-boxes div {
         width: 31%;
-        margin: 20px auto;
+        margin: 25px auto 0 auto;
         padding: 30px 20px;
+    }
+
+    /* Bröllop och begravning */
+    .brollop-begr-intro-text {
+        font-size: 1.3rem;
+    }
+
+    .gallery-container {
+        width: 100%;
+        flex-wrap: no-wrap;
+        padding: 3% 0;
+        border: none;
+        border-top: 10px double #e6e4dd;
+        border-bottom: 10px double #e6e4dd;
+    }
+
+    .gallery-image-container {
+        width: 24%;
+        margin: 0;
     }
 
     /* Om oss */
