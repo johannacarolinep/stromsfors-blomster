@@ -228,7 +228,7 @@ main {
     font-weight: 700;
     padding: 20px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 3px;
     margin: 15px 0;
     text-transform: uppercase;
 }
@@ -618,7 +618,7 @@ footer address {
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 20px;
+        border-radius: 3px;
     }
 
     /* Blomsterarrangemang */
@@ -701,7 +701,7 @@ footer address {
         padding: 10px 30px;
         width: 55%;
         margin: 10px 0;
-        border-radius: 20px;
+        border-radius: 3px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -716,11 +716,11 @@ footer address {
     .story-image-card {
         width: 40%;
         margin: 10px 0;
-        border-radius: 20px;
+        border-radius: 3px;
     }
 
     .story-image-card img {
-        border-radius: 20px;
+        border-radius: 3px;
     }
 
     #story-one {
@@ -1087,7 +1087,6 @@ footer address {
     .story-text-card {
         padding: 20px 40px;
         width: 65%;
-        border-radius: 20px;
         line-height: 2rem;
     }
 
@@ -1097,7 +1096,6 @@ footer address {
 
     .story-image-card {
         width: 30%;
-        border-radius: 20px;
     }
 
     /* Kontakta oss sida desktop */
