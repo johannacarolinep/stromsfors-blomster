@@ -147,7 +147,7 @@ main {
 
 /* Content sektioner */
 .two-columns {
-    width: 95%;
+    width: 93%;
     margin: auto;
 }
 
@@ -193,13 +193,18 @@ main {
 .blomsterbud-wrapper {
     background-color: white;
     width: 93%;
-    margin: 10px auto;
-    padding: 10px;
+    margin: 15px auto;
+    padding: 15px;
 }
 
 .blomsterbud-text h1 {
     font-size: 1.5rem;
     text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.blomsterbud-text {
+    font-size: 1.1rem;
 }
 
 .blomsterbud-image-container {
@@ -207,6 +212,9 @@ main {
     max-width: 300px;
     margin: 20px auto 10px auto;
     display: flex;
+    padding: 10px;
+    border-radius: 50%;
+    border: 5px double #514330;
 }
 
 .blomsterbud-image-container img {
@@ -214,23 +222,25 @@ main {
     object-fit: cover;
     display: flex;
     border-radius: 50%;
-    border: 10px solid #e6e4dd;
 }
 
 /* Blomsterbud details sektion */
 #blomsterbud-details-section {
-    margin: 25px 15px;
+    margin: 25px 0;
 }
 
 .blomsterbud-details-box {
-    background-color: #e6e4dd;
+    background-color: #efede9;
     color: #2e2e22;
-    font-weight: 700;
     padding: 20px;
     text-align: center;
     border-radius: 3px;
     margin: 15px 0;
     text-transform: uppercase;
+}
+
+.blomsterbud-details-paragraph {
+    font-size: 1.1rem;
 }
 
 /* Blomsterarrangemang */
@@ -242,7 +252,30 @@ main {
     background-color: white;
     margin-top: 15px;
     padding: 15px;
-    padding-bottom: 25px;
+}
+
+.arrangemang-divide-container {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    aspect-ratio: 4 / 1;
+    height: auto;
+}
+
+.border-bottom {
+    border-bottom: 5px double #e6e4dd;
+    margin-bottom: 15px;
+}
+
+.border-top {
+    border-top: 5px double #e6e4dd;
+    margin-top: 40px;
+}
+
+.arrangemang-divide-container img {
+    width: 50%;
+    margin: auto;
+    object-fit: contain;
 }
 
 #begravn-section {
@@ -315,7 +348,7 @@ main {
 
 /* Om oss */
 .story-article {
-    width: 95%;
+    width: 93%;
     margin: 15px auto;
 }
 
@@ -589,6 +622,7 @@ footer address {
     .blomsterbud-wrapper {
         margin: 30px auto;
         padding: 20px;
+        width: 95%;
     }
 
     #blomsterbud-text-section {
@@ -599,6 +633,10 @@ footer address {
         font-size: 1.8rem;
     }
 
+    .blomsterbud-text {
+        font-size: 1.2rem;
+    }
+
     .blomsterbud-image-container {
         width: 40%;
         max-width: 350px;
@@ -607,18 +645,24 @@ footer address {
 
     /* Blomsterbud details sektion */
     #blomsterbud-details-section {
-        margin: 50px auto 40px auto;
+        margin: 40px auto;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
     .blomsterbud-details-box {
         padding: 20px;
-        width: 31%;
+        width: 32%;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         border-radius: 3px;
+    }
+
+    .blomsterbud-details-paragraph {
+        font-size: 1.2rem;
     }
 
     /* Blomsterarrangemang */
@@ -633,6 +677,25 @@ footer address {
 
     #begravn-section {
         margin-bottom: 20px;
+    }
+
+    .arrangemang-divide-container {
+        aspect-ratio: 7 / 1;
+    }
+
+    .arrangemang-divide-container img {
+        width: 30%;
+        margin: 10px auto;
+    }
+
+    .border-bottom {
+        border-bottom: 8px double #e6e4dd;
+        margin-bottom: 25px;
+    }
+
+    .border-top {
+        border-top: 8px double #e6e4dd;
+        margin-top: 60px;
     }
 
     .binderi-top-container {
@@ -686,7 +749,7 @@ footer address {
         margin: 15px auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     .story-article h1 {
@@ -699,8 +762,8 @@ footer address {
     .story-text-card {
         background-color: #ffffff;
         padding: 10px 30px;
-        width: 55%;
-        margin: 10px 0;
+        width: 54%;
+        margin: 1% 0;
         border-radius: 3px;
         display: flex;
         flex-direction: column;
@@ -714,8 +777,8 @@ footer address {
     }
 
     .story-image-card {
-        width: 40%;
-        margin: 10px 0;
+        width: 44%;
+        margin: 1% 0;
         border-radius: 3px;
     }
 
@@ -761,7 +824,7 @@ footer address {
 
     #story-ten {
         order: 8;
-        width: 97%;
+        width: 100%;
     }
 
     #story-ten span {
@@ -770,7 +833,7 @@ footer address {
 
     /* Kontakta oss på tablets */
     .contact-wrapper {
-        width: 93%;
+        width: 95%;
         margin: 30px auto;
     }
 
@@ -995,18 +1058,18 @@ footer address {
     }
 
     .blomsterbud-text h1 {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         margin-bottom: 20px;
     }
 
     /* Blomsterbud details sektion */
     #blomsterbud-details-section {
-        margin: 25px auto 0 auto;
+        margin: 40px auto 20px auto;
     }
 
     .blomsterbud-details-box {
         padding: 30px;
-        width: 29%;
+        width: 30%;
     }
 
     /* Blomsterarrangemang */
@@ -1022,6 +1085,15 @@ footer address {
 
     #begravn-section {
         margin-bottom: 40px;
+    }
+
+    .arrangemang-divide-container {
+        aspect-ratio: 9 / 1;
+    }
+
+    .arrangemang-divide-container img {
+        width: 20%;
+        margin: 15px auto;
     }
 
     .binderi-top-container {
@@ -1076,6 +1148,7 @@ footer address {
 
     /* Om oss */
     .story-article {
+        width: 90%;
         max-width: 1200px;
         margin: 30px auto;
     }
@@ -1086,7 +1159,7 @@ footer address {
 
     .story-text-card {
         padding: 20px 40px;
-        width: 65%;
+        width: 64%;
         line-height: 2rem;
     }
 
@@ -1095,13 +1168,13 @@ footer address {
     }
 
     .story-image-card {
-        width: 30%;
+        width: 34%;
     }
 
     /* Kontakta oss sida desktop */
     .contact-wrapper {
         margin: 40px auto;
-        width: 95%;
+        width: 90%;
         max-width: 1200px;
     }
 
