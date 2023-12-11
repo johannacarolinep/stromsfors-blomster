@@ -111,53 +111,22 @@
                 </div>
             </div>
         </section>
-        <!-- Sektion för feedbackformulär-->
-        <section id="form-section" class="contact-page-section">
-            <h2>Vi välkomnar era åsikter</h2>
+        <!-- Sektion för feedback-svar (Användaren har skickat in formulär)-->
+        <section id="feedback-section" class="contact-page-section">
+            <h2>Tack för feedback!</h2>
             <!-- Div för att lättare kunna styla bilden -->
             <div class="form-image-container">
                 <img src="assets/images/plant-display.webp"
                     alt="Krukväxt med vita blommor, med andra krukväxter i bakgrunden.">
             </div>
-            <!-- Formulär - skickas till response.html, en kopia av denna sidan med tack-meddelande  -->
-            <form id="feedback-form" method="GET" action="response.html">
-                <p class="form-intro">
-                    Vi eftersträvar alltid att fortsätta utvecklas, och välkomnar därmed er
-                    feedback, positiv som
-                    negativ.
-                </p>
-                <br>
-                <!-- Etikett och input för längre text, kan inte lämnas tom -->
-                <label for="feedback_content">Feedback:</label>
-                <textarea name="feedback_content" id="feedback_content" class="text-input"
-                    placeholder="Skriv din feedback här..." required></textarea>
-                <br>
+            <!-- Formuläret från kontakt.html har bytts ut mot bekräftelse till användaren -->
+            <div class="response-box">
                 <p>
-                    Om återkoppling önskas, glöm inte att skicka med ditt namn och epostaddress. Vill du hellre vara
-                    anonym går det också bra. Lämna i så fall fälten nedanför tomma.
+                    Tack för er feedback. Har ni lämnat kontaktuppgifter försöker vi återkoppla så snart vi kan.
                 </p>
-                <!-- div för styling -->
-                <div class="form-input-wrapper">
-                    <!-- div för styling -->
-                    <div>
-                        <!-- Etikett och input för namn, kortare text-input, och har autocomplete för namn, kan lämnas blank -->
-                        <label for="name">Namn:</label>
-                        <input type="text" name="name" id="name" class="text-input" placeholder="Ditt namn"
-                            autocomplete="name">
-                    </div>
-                    <!-- div för styling -->
-                    <div>
-                        <!-- Etikett och input för email, validerar format för epostaddress, har autocomplete för email, kan lämnas blank -->
-                        <label for="email">Epostaddress:</label>
-                        <input type="email" name="email" id="email" class="text-input" placeholder="email@email.com"
-                            autocomplete="email">
-                    </div>
-                </div>
-                <!-- Submit-knapp, används för att skicka formuläret -->
-                <button type="submit" class="submit-button" aria-label="Skicka feedback">
-                    Skicka
-                </button>
-            </form>
+                <br>
+                <p>Vi läser och reflekterar över all feedback.</p>
+            </div>
         </section>
     </main>
     <!--Sidfot-->

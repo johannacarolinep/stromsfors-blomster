@@ -5,6 +5,7 @@
 * {
     padding: 0;
     margin: 0;
+    /* Gör så att bredd och vidd innefattar ex padding */
     box-sizing: border-box;
 }
 
@@ -31,6 +32,7 @@ h6 {
     margin-bottom: 5px;
 }
 
+/* Rubriker som inte ska visas, men som syns för skärmläsare */
 .hidden-heading {
     display: none;
 }
@@ -43,20 +45,23 @@ header {
     background-color: #ffffff;
     padding: 10px 15px;
     width: 100%;
+    /* En "skugga" så att header skiljer sig lite mer från main */
     box-shadow: 0 1px 2px rgb(183, 179, 179);
     /* Delar upp loggan och hamburgerikonen */
     display: flex;
     justify-content: space-between;
+    /* Centrerar innehållet horisontellt */
     align-items: baseline;
 }
 
 /* Stilar för länkar i sidhuvudet */
 header a {
+    /* Tar bort default stil från länkar, som ex understrykning */
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
-/* Logga mobil */
+/* Logga mobil - typsnitt, färg, utseende */
 .logo-container a {
     font-family: 'Dancing script', cursive;
     font-weight: 700;
@@ -65,46 +70,52 @@ header a {
 
 /* Dropdown-meny mobil */
 nav {
+    /* Tar ut elementet från det normala flödet och positioner i förhållande till header */
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     background-color: #ffffff;
     padding: 0 0;
-    box-shadow: 0 1px 2px black;
+    box-shadow: 0 1px 2px rgb(183, 179, 179);
     /* Gömmer menyn */
     display: none;
 }
 
-/* Menylänkar mobil */
+/* Menylänkar */
 .navbar a {
+    /* Genom att lägga padding inuti länkarna blir ett större område klickbart */
     padding: 15px 10px;
     margin: 5px 7px;
     font-size: 1rem;
     color: black;
     background-color: #e6e4dd;
+    /* Visa som versaler */
     text-transform: uppercase;
 }
 
+/* Extra skugga appliceras vid klick */
 .navbar a:active {
     box-shadow: 0 0 5px rgb(87, 83, 82);
 }
 
-/* Markera den aktuella sidan */
+/* Markera den aktuella sidan med understrykning */
 #active {
     text-decoration: underline;
 }
 
-/* Navbar toggle på mobil */
+/* Navbar toggle på mobil - visar menyn när checkrutan är ikryssad. Blir ikryssad när man klickar på etiketten (hamburgerikonen) */
 #nav-toggle:checked~nav {
     display: flex;
     flex-direction: column;
 }
 
+/* Gömmer checkrutan för navigation på mobil */
 #nav-toggle {
     display: none;
 }
 
+/* Stil för hamburgerikonen */
 .nav-toggle-label {
     font-size: 2rem;
 }
@@ -117,41 +128,49 @@ main {
     flex: 1 0 auto;
 }
 
-/* Hero section styles */
+/* Hero-sektion */
 #hero {
+    /* En fast höjd i pixlar */
     height: 450px;
     width: 100%;
+    /* Bakgrundsbild som ska täcka storleken */
     background: url("../images/ivy.webp") no-repeat center center/cover;
+    /* Låter mig positionera "hero overlay" i förhållande till hero */
     position: relative;
 }
 
-/* BEHÖVER KOMMENTERAS */
+/* En "overlay", som positioneras ovanpå bakgrunden (hero). */
 #hero-text-container {
     background-color: #ffffff;
     border: 5px solid #e6e4dd;
     font-size: 120%;
     width: 90%;
+    /* Centrerar horisontellt */
     left: 0;
     right: 0;
     margin: auto;
     padding: 40px 20px;
     min-height: 200px;
     position: absolute;
+    /* Positionerar 100px från botten av "hero" */
     bottom: 100px;
     border-radius: 50%;
+    /* Centrerar texten inuti */
     text-align: center;
     max-width: 515px;
 }
 
+/* text i hero overlay som efterliknar loggan */
 #hero-logo {
     font-size: 2rem;
     font-family: 'Dancing script', cursive;
     margin: 7px 0;
 }
 
-/* Content sektioner */
+/* Appliceras på en div som omfattar allt content i main på index.html */
 .two-columns {
     width: 93%;
+    /* Centrerar */
     margin: auto;
 }
 
@@ -159,6 +178,7 @@ main {
     margin-top: 15px;
 }
 
+/* Appliceras på alla div inuti två sektioner */
 #offers-section>div,
 #details-section>div {
     background-color: #ffffff;
@@ -167,17 +187,25 @@ main {
 }
 
 /* Bilder i offers section */
+/* div som håller bild-elementet */
 .offers-image-container {
+    /* Bredden i förhållande till förälderns bredd - 85% men högst 300px */
     width: 85%;
     max-width: 300px;
-    display: flex;
+    /* 20px marginal vertikalt, centrera horisontellt */
     margin: 20px auto;
 }
 
+/* Själva bilden */
 .offers-image-container img {
+    /* Bredd 100% av föräldern */
     width: 100%;
+    display: flex;
+    /* Anger bildens dimension */
     aspect-ratio: 1 / 1;
+    /* Bilden ska täcka den angivna storleken */
     object-fit: cover;
+    /* Gör bilden rund, så länge den är 1:1 */
     border-radius: 50%;
 }
 
@@ -187,22 +215,27 @@ main {
 
 /* Länkar till sociala medier, details */
 #details-section a {
+    /* Tar bort default styling för länkar */
     text-decoration: none;
     font-size: 3rem;
     margin-right: 10px;
-    color: rgb(65, 54, 38);
+    color: #514330;
 }
 
 /* Blomsterbud sidan */
+/* Appliceras på div som håller allt content på sidan */
 .blomsterbud-wrapper {
     background-color: white;
     width: 93%;
+    /* marginal upptill och nedtill, centrera horisontellt */
     margin: 15px auto;
     padding: 15px;
 }
 
+/* Appliceras på h1-element inuti element med klassen */
 .blomsterbud-text h1 {
     font-size: 1.5rem;
+    /* Visa som versaler */
     text-transform: uppercase;
     margin-bottom: 10px;
 }
@@ -214,17 +247,22 @@ main {
 .blomsterbud-image-container {
     width: 70%;
     max-width: 300px;
+    /* marginal 20px upptill, 10px nedtill, och centrera horisontellt */
     margin: 20px auto 10px auto;
-    display: flex;
+    /* Skapar en buffer mellan elementets yttre kant och innehåll*/
     padding: 10px;
+    /* Gör rund */
     border-radius: 50%;
+    /* En dubbel kant/ram */
     border: 5px double #514330;
 }
 
+/* Bilden stylas för att ta upp 100% bredd av föräldern, täcka ytan, och behålla sin form. */
 .blomsterbud-image-container img {
     width: 100%;
     object-fit: cover;
     display: flex;
+    /* Gör kvadratiskt element rund */
     border-radius: 50%;
 }
 
@@ -258,12 +296,25 @@ main {
     padding: 15px;
 }
 
+/* En div som agerar som yttre container för en bild */
 .arrangemang-divide-container {
     display: flex;
+    /* tar upp hela förälderns bredd */
     width: 100%;
+    /* centrerar */
     margin: auto;
+    /* sätter dimensionen */
     aspect-ratio: 4 / 1;
+    /* höjd sätts utifrån dimension */
     height: auto;
+}
+
+.arrangemang-divide-container img {
+    /* bilden tar upp 50% bredd av förälderns bredd */
+    width: 50%;
+    margin: auto;
+    /* bilden "krymper" till största möjliga storlek som får plats i sin helhet inuti föräldern */
+    object-fit: contain;
 }
 
 .border-bottom {
@@ -274,12 +325,6 @@ main {
 .border-top {
     border-top: 5px double #e6e4dd;
     margin-top: 40px;
-}
-
-.arrangemang-divide-container img {
-    width: 50%;
-    margin: auto;
-    object-fit: contain;
 }
 
 #begravn-section {
@@ -294,6 +339,7 @@ main {
     display: flex;
     width: 75%;
     max-width: 300px;
+    /* marginal 15px upptill, 0 nedtill, och centreras horisontellt */
     margin: 15px auto 0 auto;
 }
 
@@ -308,6 +354,7 @@ main {
     width: 100%;
     margin: 15px auto 0 auto;
     padding: 15px;
+    /* Rundar hörnen diskret */
     border-radius: 3px;
 }
 
@@ -317,6 +364,7 @@ main {
 
 .link-standard {
     text-decoration: none;
+    /* fetstil */
     font-weight: 600;
     color: #514330;
 }
@@ -331,19 +379,25 @@ main {
 }
 
 .gallery-container {
+    /* Gör galler-container till en flex-box. Tillåter att vi ordnar dess barn mer flexibelt */
     display: flex;
+    /* Innehållet tar upp fler rader när det inte får plats på en rad */
     flex-wrap: wrap;
+    /* Innehållet ordnas med så mycket utrymmer som möjligt mellan dem */
     justify-content: space-between;
     margin: 15px 0;
 }
 
+/* Varje bild-container är 49% bred (i förhållande till föräldern. Alltså kommer 2 få plats per rad, med lite utrymme mellan */
 .gallery-image-container {
     width: 49%;
     aspect-ratio: 1/1;
     display: flex;
+    /* Skapar lite marginal upptill och nedtill, inget extra utrymme horisontellt */
     margin: 1% 0;
 }
 
+/* Varje bild tar upp hela ytan av sin förälder */
 .gallery-image-container img {
     width: 100%;
     height: auto;
@@ -372,11 +426,13 @@ main {
     display: flex;
 }
 
+/* Varje bild tar upp hela ytan av sin förälder */
 .story-image-card img {
     width: 100%;
     object-fit: cover;
     aspect-ratio: 1/1;
-    border: 10px solid white;
+    /* En vit kant, 10px bred */
+    border: 10px solid #ffffff;
 }
 
 .article-last-p {
@@ -384,11 +440,10 @@ main {
     margin-bottom: 15px;
 }
 
-/* Kontakta oss sida */
-
+/* Kontakta oss (+response.html) sida */
 /* Sektion med öppettider och kontaktuppgifter */
 #hours-contact-section {
-    background-color: white;
+    background-color: #ffffff;
     /* Skapar avstånd till nästa sektion */
     margin: 20px auto;
     width: 93%;
@@ -437,14 +492,17 @@ main {
 }
 
 /* Formulär */
-#form-section {
-    background-color: white;
+/* Sektion för formulär, motsvarande sektion på respons-sidan, (feedback-section) får samma stil */
+#form-section,
+#feedback-section {
+    background-color: #ffffff;
     width: 93%;
     margin: 0 auto 20px auto;
     padding: 15px;
 }
 
-#form-section h2 {
+#form-section h2,
+#feedback-section h2 {
     text-transform: uppercase;
     border-bottom: 3px solid #514330;
 }
@@ -456,9 +514,10 @@ main {
     margin: 20px auto;
     border-radius: 50%;
     padding: 5px;
-    border: 3px solid #0d3e16;
+    border: 5px solid #0d3e16;
 }
 
+/* Tar upp hela förälderns yta */
 .form-image-container img {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -467,6 +526,7 @@ main {
 }
 
 #feedback-form {
+    /* Ordnar alla barn-element i en kolumn och låter varje barn-element ta upp en hel rad */
     display: flex;
     flex-direction: column;
 }
@@ -477,6 +537,7 @@ main {
 }
 
 .form-input-wrapper div {
+    /* Ordnar alla barn-element i en kolumn och låter varje barn-element ta upp en hel rad */
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -488,9 +549,11 @@ main {
 }
 
 #feedback-form textarea {
+    /* Ger textarea lite mer höjd så att användare lättare kan se vad de skriver */
     height: 100px;
 }
 
+/* Skapar lite mer utrymme i input-fälten */
 #feedback-form input,
 #feedback-form textarea {
     padding: 5px;
@@ -500,6 +563,7 @@ main {
 }
 
 .submit-button {
+    /* Gör så att muspekaren indikerar att detta är ett interaktivt element */
     cursor: pointer;
     border: none;
     outline: none;
@@ -509,15 +573,18 @@ main {
     background-color: rgb(18, 85, 18);
     color: #ffffff;
     font-weight: 500;
+    /* Skapar lite mer utrymme mellan bokstäverna */
     letter-spacing: 2px;
     font-family: 'Athiti', sans-serif;
     margin: 15px 0;
 }
 
+/* Ger knappen en skugga när muspekaren förs över den */
 .submit-button:hover {
     box-shadow: 10px 10px 30px #bcb9b9;
 }
 
+/* Ger knappen en lite tajtare skugga vid klick, i en mörkare färg, samt justerar bakgrundsfärgen */
 .submit-button:active {
     box-shadow: 10px 10px 15px #959292;
     background-color: rgb(14, 64, 14);
@@ -545,21 +612,23 @@ footer address {
     header {
         padding: 5px 15px;
         box-shadow: 0 1px 2px rgb(183, 179, 179);
+        /* Delar upp header på två rader */
         flex-direction: column;
         align-items: center;
     }
 
-    /* Tar fram menyn */
+    /* Tar fram menyn, oavsett om checkrutan är markerad */
     nav,
     #nav-toggle:checked~nav {
         position: relative;
         box-shadow: none;
+        /* Visa elementen i menyn på en rad, och horisontellt centrerat */
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
 
-    /* Gömmer hamburgerikonen */
+    /* Gömmer hamburgerikonen som inte längre behövs */
     .nav-toggle-label {
         display: none;
     }
@@ -576,6 +645,7 @@ footer address {
         font-size: 1.1rem;
     }
 
+    /* Sätter default storlek på headings på tablets */
     h2 {
         font-size: 2rem;
     }
@@ -588,14 +658,13 @@ footer address {
         font-size: 1.2rem;
     }
 
-    /* Hero på tablet BEHÖVER KOMMENTERAS */
+    /* Hero på tablet - justerar storlek och padding lite */
     #hero-text-container {
         font-size: 120%;
         width: 70%;
         max-width: 600px;
         padding: 40px 20px;
         min-height: 230px;
-        bottom: 100px;
     }
 
     #hero-logo {
@@ -608,6 +677,7 @@ footer address {
         width: 96%;
     }
 
+    /* Använder float för att lägga två sektioner i varsin kolumn */
     #offers-section {
         float: left;
         width: 68%;
@@ -627,10 +697,6 @@ footer address {
         width: 95%;
     }
 
-    #blomsterbud-text-section {
-        margin: auto;
-    }
-
     .blomsterbud-text h1 {
         font-size: 1.8rem;
     }
@@ -639,6 +705,7 @@ footer address {
         font-size: 1.2rem;
     }
 
+    /* Justerar storlek och max-storlek för bildens behållare */
     .blomsterbud-image-container {
         width: 40%;
         max-width: 350px;
@@ -648,11 +715,15 @@ footer address {
     /* Blomsterbud details sektion */
     #blomsterbud-details-section {
         margin: 40px auto;
+        /* Gör elementet till en flexbox.*/
         display: flex;
+        /* Innehållet tar upp flera rader vid behov */
         flex-wrap: wrap;
+        /* Innehållet placeras så långt ifrån varandra som möjligt */
         justify-content: space-between;
     }
 
+    /* Varje element med klassen får en bredd på 32%, så tre får plats på en rad, med lite marginal. Det fjärde elementet hamnar på en egen rad. */
     .blomsterbud-details-box {
         padding: 20px;
         width: 32%;
@@ -681,11 +752,13 @@ footer address {
         margin-bottom: 20px;
     }
 
+    /* Justerar aspect ratio för bildernas behållare */
     .arrangemang-divide-container {
         aspect-ratio: 7 / 1;
     }
 
     .arrangemang-divide-container img {
+        /* Bilden får ta upp 30% av behållarens bredd */
         width: 30%;
         margin: 10px auto;
     }
@@ -703,8 +776,10 @@ footer address {
     .binderi-top-container {
         margin: auto;
         padding: 0 15px 15px 15px;
+        /* Gör till flexbox, med innehållet på en rad */
         display: flex;
         flex-wrap: nowrap;
+        /* Centrera innehållet (barn-elementen) vertikalt */
         align-items: center;
     }
 
@@ -731,24 +806,18 @@ footer address {
         font-size: 1.2rem;
     }
 
+    /* Lägger till padding och en border runt galleriet så att bilderna inte blir riktigt så stora */
     .gallery-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
         padding: 2% 3%;
         border: 10px double #e6e4dd;
         margin: 20px auto;
-    }
-
-    .gallery-image-container {
-        width: 49%;
-        margin: 1% 0;
     }
 
     /* Om oss */
     .story-article {
         width: 95%;
         margin: 15px auto;
+        /* Gör till flexbox, med innehåll på flera rader, placerade så långt ifrån varandra som möjligt */
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -758,18 +827,22 @@ footer address {
         font-size: 1.8rem;
         text-align: center;
         text-transform: uppercase;
+        /* Tar upp en hel rad */
         width: 100%;
     }
 
     .story-text-card {
         background-color: #ffffff;
         padding: 20px 30px;
+        /* Alla div med text får en bredd på 54%, och lite extra marginal upp och nedtill */
         width: 54%;
         margin: 1% 0;
         border-radius: 3px;
+        /* flexbox för att centrera rubriker och paragrafer vertikalt */
         display: flex;
         flex-direction: column;
         justify-content: center;
+        /* Lite högre radhöjd, för bättre läsbarhet */
         line-height: 1.6rem;
     }
 
@@ -778,6 +851,7 @@ footer address {
         font-size: 1.6rem;
     }
 
+    /* Varje div med en bild i får en bredd på 44% */
     .story-image-card {
         width: 44%;
         margin: 1% 0;
@@ -788,6 +862,7 @@ footer address {
         border-radius: 3px;
     }
 
+    /* Ändrar ordningen på text- och bild-korten, så att inte alla bilder hamnar på samma sida */
     #story-one {
         order: -1;
     }
@@ -824,30 +899,35 @@ footer address {
         order: 7;
     }
 
+    /* Får ta upp en hel rad */
     #story-ten {
         order: 8;
         width: 100%;
     }
 
-    /* Kontakta oss på tablets */
+    /* Kontakta oss (+response.html) på tablets */
     /* Sektion med öppettider och kontaktuppgifter */
     #hours-contact-section {
         width: 95%;
         margin: 30px auto;
+        /* Flexbox så att öppettider och kontaktuppgifter kan flyttas till samma rad */
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
+    /* Tar upp en hel rad */
     .contact-first-image-container {
         width: 100%;
         aspect-ratio: 7 / 1;
     }
 
+    /* Öppettider och kontaktuppgifter tillsammans tar upp en rad */
     .hours-contact-text-content {
-        padding: 15px 20px;
-        display: flex;
         width: 100%;
+        padding: 15px 20px;
+        /* Också flex, för att ordna öppettider och kontaktuppgifters layout */
+        display: flex;
     }
 
     .contact-page-hours {
@@ -858,6 +938,7 @@ footer address {
     }
 
     .contact-page-contacts {
+        /* Tar bort padding som användes på mindre skärm */
         padding-top: 0;
         padding-left: 30px;
         width: 50%;
@@ -873,15 +954,20 @@ footer address {
     }
 
     /* Formulär */
-    #form-section {
+    /* Sektion för formulär, motsvarande sektion på respons-sidan, (feedback-section) får samma stil */
+    #form-section,
+    #feedback-section {
         width: 95%;
         margin: 30px auto;
         display: flex;
+        /* flexbox med barn-elementen på flera rader */
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    #form-section h2 {
+    #form-section h2,
+    #feedback-section h2 {
+        /* Får en bredd på 50% så att den kan dela rad med bilden */
         width: 50%;
         text-align: center;
         align-self: center;
@@ -894,7 +980,9 @@ footer address {
         width: 30%;
     }
 
-    #feedback-form {
+    #feedback-form,
+    .response-box {
+        /* Tar upp en hel rad */
         width: 100%;
         border-top: 3px solid #514330;
         padding-top: 15px;
@@ -903,15 +991,14 @@ footer address {
 
     .form-input-wrapper {
         margin: 15px 0;
+        /* Ändrar så att inputs nu hamnar på en rad */
         display: flex;
         flex-direction: row;
     }
 
     .form-input-wrapper div {
-        display: flex;
-        flex-direction: row;
         margin-right: 30px;
-        width: 50%;
+        width: 47%;
     }
 
     .form-input-wrapper label {
@@ -920,15 +1007,16 @@ footer address {
 
     /* Sidfot på tablets */
     footer {
+        /* flex-box så att footers content hamnar på en rad, 3 kolumner */
         display: flex;
         justify-content: space-between;
     }
 
     #footer-copyright {
         display: flex;
+        /* positionerar copyright-info till slutet av flexutrymmet */
         align-items: end;
     }
-
 }
 
 /* Stilar för laptops och desktop */
@@ -937,6 +1025,7 @@ footer address {
     /* Visa header på en rad */
     header {
         flex-direction: row;
+        /* Positionera headers element mot böjan av raden */
         justify-content: start;
     }
 
@@ -952,12 +1041,14 @@ footer address {
         padding-bottom: 0px;
     }
 
+    /* Stylar länkarna i navigeringen annorlunda vid hover */
     .navbar a:hover {
         font-weight: 600;
         background-color: #efede9;
         box-shadow: 0 0 3px rgb(205, 200, 198);
     }
 
+    /* Lägger till en extra skugga vid klick */
     .navbar a:active {
         box-shadow: 0 0 5px rgb(126, 121, 119);
     }
@@ -968,13 +1059,14 @@ footer address {
         margin-top: 69.5px;
     }
 
-    /* Content sections på desktop */
-    /* Content sektioner tablets */
+    /* Startsidan på desktop */
     .two-columns {
         width: 97%;
+        /* max-bredd */
         max-width: 1400px;
     }
 
+    /* Justerar bredden på respektive kolumn på startsidan */
     #offers-section {
         width: 72%;
     }
@@ -995,6 +1087,7 @@ footer address {
         margin-bottom: 20px;
     }
 
+    /* Flex-box för de divs i offers section som innehåller en bild. Ändrar så att texten och bilden hamnar på samma rad */
     .offers-flex-container {
         display: flex;
         justify-content: space-between;
@@ -1015,6 +1108,7 @@ footer address {
         padding-bottom: 0;
     }
 
+    /* Byter plats på texten och bilden i ett av div-elementen */
     .offers-text-right {
         order: 1;
         padding-left: 20px;
@@ -1026,6 +1120,7 @@ footer address {
 
     /* Blomsterbud sidan */
     .blomsterbud-main {
+        /* Flex för main, för att säkerställa att content hamnar i mitten av skärmen även när man tittar på en stor desktop */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1039,6 +1134,7 @@ footer address {
     }
 
     #blomsterbud-text-section {
+        /* Flex för att lägga texten och bilden på samma rad */
         display: flex;
         justify-content: space-between;
     }
@@ -1050,6 +1146,7 @@ footer address {
 
     .blomsterbud-text {
         width: 70%;
+        /* Säkerställer lite utrymme mellan texten och bilden */
         padding-right: 40px;
     }
 
@@ -1069,6 +1166,7 @@ footer address {
     }
 
     /* Blomsterarrangemang */
+    /* Justerar bredd, margin och padding för sektionerna */
     #binderi-intro-section,
     #brollop-section,
     #begravn-section {
@@ -1083,6 +1181,7 @@ footer address {
         margin-bottom: 40px;
     }
 
+    /* Justerar aspect-ratio och storlek för bilden som avskärmar sektionerna */
     .arrangemang-divide-container {
         aspect-ratio: 9 / 1;
     }
@@ -1107,12 +1206,15 @@ footer address {
     }
 
     .binderi-image-container {
+        /* Tar bort margin som använts på mindre skärmstorlek */
         margin: 0;
         width: 35%;
         max-width: 450px;
     }
 
+    /* Boxar i intro-sektion på blomsterarrangemangs-sidan */
     .binderi-intro-boxes {
+        /* Flex för att dessa ska hamna på rad */
         display: flex;
         justify-content: space-evenly;
     }
@@ -1130,8 +1232,10 @@ footer address {
 
     .gallery-container {
         width: 100%;
-        flex-wrap: no-wrap;
+        /* Tar bort "wrap" så att alla bilder nu hamnar på en rad */
+        flex-wrap: nowrap;
         padding: 3% 0;
+        /* Byter ut ramen runt hela galleriet mot en kant upptill och nedtill */
         border: none;
         border-top: 10px double #e6e4dd;
         border-bottom: 10px double #e6e4dd;
@@ -1167,21 +1271,25 @@ footer address {
         width: 34%;
     }
 
-    /* Kontakta oss sida desktop */
+    /* Kontakta oss sida (+sida response.html) desktop */
     /* Sektion med öppettider och kontaktuppgifter */
     #hours-contact-section {
-        flex-wrap: no-wrap;
+        /* Sätter nowrap så att bilden nu hamnar på samma rad */
+        flex-wrap: nowrap;
         width: 90%;
         max-width: 1200px;
         margin: 40px auto;
     }
 
     .hours-contact-text-content {
+        /* Sätter bredden till 90% av föräldern */
         width: 90%;
+        /* Ändrar ordningen, så att bilden hamnar till höger */
         order: -1;
         padding: 30px 50px 30px 30px;
     }
 
+    /* Öppettider och kontaktuppgifter tar upp halva sin container var */
     .contact-page-hours {
         width: 50%;
         border-right: 3px solid #514330;
@@ -1204,25 +1312,31 @@ footer address {
 
     /* Bild på kontakta oss sidan */
     .contact-first-image-container {
+        /* Bredden 10% av föräldern. Blir 100% tillsammans med (.hours-contact-text-content) */
         width: 10%;
         aspect-ratio: 1 / 4;
+        /* Tar bort padding upptill och lägger till padding till höger */
         padding-top: 0;
         padding-right: 25px;
     }
 
     /* Formulär */
-    #form-section {
+    /* Sektion för formulär, motsvarande sektion på respons-sidan, (feedback-section) får samma stil */
+    #form-section,
+    #feedback-section {
         width: 90%;
         max-width: 1200px;
         padding: 30px;
         margin: 40px auto;
     }
 
-    #form-section h2 {
+    #form-section h2,
+    #feedback-section h2 {
+        /* tar upp en hel rad */
         width: 100%;
         text-align: left;
         align-self: center;
-        order: -2;
+        /* Lägger till en kant nedtill */
         border-bottom: 3px solid #514330;
         margin-left: 0;
         font-size: 2rem;
@@ -1232,15 +1346,22 @@ footer address {
         width: 30%;
         margin: auto;
         max-width: 350px;
+        /* Ändrar ordningen så att bilden hamnar sist (till höger om formuläret) */
+        order: 1;
     }
 
-    #feedback-form {
+    #feedback-form,
+    .response-box {
         width: 65%;
         padding-right: 40px;
-        order: -1;
+        /* Tar bort kanten upptill på formuläret */
         border-top: none;
     }
 
+    /* Sätter en min-höjd på div som håller responsen för att layout ska fungera */
+    .response-box {
+        min-height: 370px;
+    }
 
     /* Sidfot på laptops och desktop */
     footer div,
