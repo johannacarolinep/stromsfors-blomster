@@ -4,20 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Meta tags for search engines-->
+    <!-- Meta taggar för sökmotorer -->
     <meta name="description"
         content="Kontaktuppgifter till Strömsfors Blomster AB,er lokala blomsterbutik i Strömsfors.">
     <meta name="keywords"
         content="blomsterbutik strömsfors, strömsfors blomster öppettider, öppettider blomsterbutik strömsfors">
     <meta name="author" content="Johanna Petersson">
+    <!-- Sidans titel -->
     <title>Strömsfors Blomster - Kontakta oss</title>
-    <!--Länk till CSS-->
+    <!-- Länk till CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
 </head>
 
 <body>
@@ -25,7 +26,8 @@
     <header>
         <!--Logga och meny-->
         <div class="logo-container">
-            <a aria-label="Strömsfors blomsters logga, gå till sidans topp" href="#top">Strömsfors Blomster
+            <!-- Klickbar logga av text, leder till startsidan. Ikonen är gömd för skärmläsare, enbart dekorativ -->
+            <a aria-label="Strömsfors blomsters logga, gå till startsidan" href="index.html">Strömsfors Blomster
                 <i aria-hidden="true" class="fa-brands fa-pagelines"></i>
             </a>
         </div>
@@ -33,8 +35,10 @@
         <input type="checkbox" id="nav-toggle" name="nav-toggle"
             aria-label="Checkbox to open and close navigation on mobile">
         <label for="nav-toggle" class="nav-toggle-label" aria-labelledby="nav-toggle">
+            <!-- Hamburgerikon, fontawesome -->
             <i class="fa-solid fa-bars"></i>
         </label>
+        <!-- Navigering med länkar till alla sidor-->
         <nav class="navbar">
             <a href="index.html" aria-label="Besök startsidan">Start</a>
             <a href="blomsterbud.html" aria-label="Besök sidan Blomsterbud">
@@ -51,106 +55,127 @@
     </header>
     <!--Sidans huvudsakliga innehåll-->
     <main>
-        <div class="contact-wrapper">
-            <section id="hours-contact-section" class="contact-page-section">
-
-                <picture class="contact-first-image-container">
-                    <source media="(min-width: 1050px)" srcset="assets/images/leafy-garland-vertical.webp">
-                    <img src="assets/images/leafy-garland.webp" alt="Girlang av mörkgröna löv">
-                </picture>
-                <div class="hours-contact-text-content">
-                    <div class="contact-page-hours">
-                        <h2>Ordinarie öppettider:</h2>
-                        <p>Vardagar: 9-17</p>
-                        <p>Lördagar: 10-15</p>
-                        <p>Söndagar: stängt</p>
-                        <br>
-                        <h3>Öppettider special:</h3>
-                        <p>Julafton: stängt</p>
-                        <p>Nyårsafton: 10-15</p>
-                        <p>Nyårsdagen: stängt</p>
-                        <br>
-                        <h3>Extraöppet!</h3>
-                        <p>
-                            I december har vi öppet till kl 18 på vardagar, så ni hinner hit efter jobbet!
-                        </p>
-                    </div>
-                    <div class="contact-page-contacts">
-                        <h2>Kontaktuppgifter:</h2>
-                        <p>Telefon: 012-3456-789</p>
-                        <p>Email: info@stromsforsblomster.com</p>
-                        <br>
-                        <p>Address: Hittepåg. 15, 12345 Strömsfors</p>
-                        <br>
-                        <div class="contact-page-social">
-                            <h3>Ni kan också hitta oss på sociala medier:</h3>
-                            <a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                                aria-label="Besök vår Facebook-sida (öppnas i en ny flik)">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                            <a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                                aria-label="Besök vår Instagram (öppnas i en ny flik)">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </div>
+        <!-- En gömd övergripande rubrik för innehållet på sidan -->
+        <h1 class="hidden-heading">Öppettider och kontaktuppgifter</h1>
+        <!-- Sektion för öppettider och kontaktuppgifter -->
+        <section id="hours-contact-section" class="contact-page-section">
+            <!-- Använder picture för att kunna visa två olika bilder baserat på skärmstorlek-->
+            <picture class="contact-first-image-container">
+                <!-- Bildkälla på desktops -->
+                <source media="(min-width: 1050px)" srcset="assets/images/leafy-garland-vertical.webp">
+                <!-- Bild på skärmar med bredd under 1050px (+fallback)-->
+                <img src="assets/images/leafy-garland.webp" alt="Girlang av mörkgröna löv">
+            </picture>
+            <!-- Div för styling -->
+            <div class="hours-contact-text-content">
+                <!-- Div för styling -->
+                <div class="contact-page-hours">
+                    <h2>Ordinarie öppettider:</h2>
+                    <p>Vardagar: 9-17</p>
+                    <p>Lördagar: 10-15</p>
+                    <p>Söndagar: stängt</p>
+                    <br>
+                    <h3>Öppettider special:</h3>
+                    <p>Julafton: stängt</p>
+                    <p>Nyårsafton: 10-15</p>
+                    <p>Nyårsdagen: stängt</p>
+                    <br>
+                    <h3>Extraöppet!</h3>
+                    <p>
+                        I december har vi öppet till kl 18 på vardagar, så ni hinner hit efter jobbet!
+                    </p>
+                </div>
+                <!--Div för styling -->
+                <div class="contact-page-contacts">
+                    <h2>Kontaktuppgifter:</h2>
+                    <p>Telefon: 012-3456-789</p>
+                    <p>Email: info@stromsforsblomster.com</p>
+                    <br>
+                    <p>Address: Hittepåg. 15, 12345 Strömsfors</p>
+                    <br>
+                    <!-- Div för styling -->
+                    <div class="contact-page-social">
+                        <h3>Ni kan också hitta oss på sociala medier:</h3>
+                        <!-- Klickbara ikoner till sociala medier. Öppnas i en ny flik. Den nya fliken får inte åtkomst till sidan -->
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                            aria-label="Besök vår Facebook-sida (öppnas i en ny flik)">
+                            <!-- Ikon från fontawesome-->
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                            aria-label="Besök vår Instagram (öppnas i en ny flik)">
+                            <!-- Ikon från fontawesome-->
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
-            </section>
-            <section id="form-section" class="contact-page-section">
-                <h2>Vi välkomnar era åsikter</h2>
-                <div class="form-image-container">
-                    <img src="assets/images/plant-display.webp"
-                        alt="Krukväxt med vita blommor, med andra krukväxter i bakgrunden.">
-                </div>
-                <form id="feedback-form">
-                    <p class="form-intro">Vi eftersträvar alltid att fortsätta utvecklas, och välkomnar därmed er
-                        feedback, positiv som
-                        negativ.</p>
-                    <br>
-                    <label for="feedback_content">Feedback:</label>
-                    <textarea name="feedback_content" id="feedback_content" class="text-input"
-                        placeholder="Skriv din feedback här..." required></textarea>
-                    <br>
-                    <p>Om återkoppling önskas, glöm inte att skicka med ditt namn och epostaddress. Vill du hellre vara
-                        anonym går det också bra. Lämna i så fall fälten nedanför tomma.</p>
-                    <div class="form-input-wrapper">
-                        <div>
-                            <label for="name">Namn:</label>
-                            <input type="text" name="name" id="name" class="text-input" placeholder="Ditt namn">
-                        </div>
-                        <div>
-                            <label for="email">Epostaddress:</label>
-                            <input type="email" name="email" id="email" class="text-input"
-                                placeholder="email@email.com">
-                        </div>
+            </div>
+        </section>
+        <!-- Sektion för feedbackformulär-->
+        <section id="form-section" class="contact-page-section">
+            <h2>Vi välkomnar era åsikter</h2>
+            <!-- Div för att lättare kunna styla bilden -->
+            <div class="form-image-container">
+                <img src="assets/images/plant-display.webp"
+                    alt="Krukväxt med vita blommor, med andra krukväxter i bakgrunden.">
+            </div>
+            <!-- Formulär - ingenting händer vid submit, information skickas ingenstans -->
+            <form id="feedback-form">
+                <p class="form-intro">
+                    Vi eftersträvar alltid att fortsätta utvecklas, och välkomnar därmed er
+                    feedback, positiv som
+                    negativ.
+                </p>
+                <br>
+                <!-- Etikett och input för längre text, kan inte lämnas tom -->
+                <label for="feedback_content">Feedback:</label>
+                <textarea name="feedback_content" id="feedback_content" class="text-input"
+                    placeholder="Skriv din feedback här..." required></textarea>
+                <br>
+                <p>
+                    Om återkoppling önskas, glöm inte att skicka med ditt namn och epostaddress. Vill du hellre vara
+                    anonym går det också bra. Lämna i så fall fälten nedanför tomma.
+                </p>
+                <!-- div för styling -->
+                <div class="form-input-wrapper">
+                    <!-- div för styling -->
+                    <div>
+                        <!-- Etikett och input för namn, kortare text-input, och har autocomplete för namn, kan lämnas blank -->
+                        <label for="name">Namn:</label>
+                        <input type="text" name="name" id="name" class="text-input" placeholder="Ditt namn"
+                            autocomplete="name">
                     </div>
-                    <button type="submit" class="submit-button" aria-label="Skicka feedback">
-                        Skicka
-                    </button>
-                </form>
-            </section>
-        </div>
+                    <!-- div för styling -->
+                    <div>
+                        <!-- Etikett och input för email, validerar format för epostaddress, har autocomplete för email, kan lämnas blank -->
+                        <label for="email">Epostaddress:</label>
+                        <input type="email" name="email" id="email" class="text-input" placeholder="email@email.com"
+                            autocomplete="email">
+                    </div>
+                </div>
+                <!-- Submit-knapp, används för att skicka formuläret -->
+                <button type="submit" class="submit-button" aria-label="Skicka feedback">
+                    Skicka
+                </button>
+            </form>
+        </section>
     </main>
     <!--Sidfot-->
     <footer>
-        <div>
-            <address>
-                <b>Tlf:</b> 012-3456-789<br>
-                info@stromsforsblomster.com<br>
-                <br>
-                <b>Adress: </b>
-                Hittepåg. 15 <br>
-                12345 Strömsfors
-            </address>
-        </div>
-        <div>
-            <address>
-                <b>Ord öppettider:</b><br>
-                Mån-Fre: 9-17<br>
-                Lör: 10-15<br>
-                Sön: Stängt
-            </address>
-        </div>
+        <address>
+            <b>Tlf:</b> 012-3456-789<br>
+            info@stromsforsblomster.com<br>
+            <br>
+            <b>Adress: </b>
+            Hittepåg. 15 <br>
+            12345 Strömsfors
+        </address>
+        <address>
+            <b>Ord öppettider:</b><br>
+            Mån-Fre: 9-17<br>
+            Lör: 10-15<br>
+            Sön: Stängt
+        </address>
         <div id="footer-copyright">
             <p>&copy;Strömsfors Blomster AB</p>
         </div>

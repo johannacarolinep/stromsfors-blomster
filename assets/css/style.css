@@ -31,6 +31,10 @@ h6 {
     margin-bottom: 5px;
 }
 
+.hidden-heading {
+    display: none;
+}
+
 /* Sidhuvud mobil */
 header {
     /* Sitter fast och är positionerat fram på sidan*/
@@ -39,7 +43,7 @@ header {
     background-color: #ffffff;
     padding: 10px 15px;
     width: 100%;
-    box-shadow: 0 1px 2px black;
+    box-shadow: 0 1px 2px rgb(183, 179, 179);
     /* Delar upp loggan och hamburgerikonen */
     display: flex;
     justify-content: space-between;
@@ -375,20 +379,19 @@ main {
     border: 10px solid white;
 }
 
-/* Kontakta oss sida */
-/* Behållare för båda sektionerna */
-.contact-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 93%;
-    margin: 20px auto;
+.article-last-p {
+    font-weight: 600;
+    margin-bottom: 15px;
 }
+
+/* Kontakta oss sida */
 
 /* Sektion med öppettider och kontaktuppgifter */
 #hours-contact-section {
     background-color: white;
     /* Skapar avstånd till nästa sektion */
-    margin-bottom: 20px;
+    margin: 20px auto;
+    width: 93%;
 }
 
 /* Bild i första sektionen */
@@ -436,7 +439,8 @@ main {
 /* Formulär */
 #form-section {
     background-color: white;
-    margin-bottom: 20px;
+    width: 93%;
+    margin: 0 auto 20px auto;
     padding: 15px;
 }
 
@@ -525,7 +529,8 @@ footer {
     color: #ffffff;
 }
 
-footer div {
+footer div,
+footer address {
     margin: 1rem 1rem;
 }
 
@@ -539,10 +544,7 @@ footer address {
     /* Sidhuvud på tablets */
     header {
         padding: 5px 15px;
-        width: 100%;
-        box-shadow: 0 1px 2px black;
-        /* Delar upp loggan och hamburgerikonen */
-        display: flex;
+        box-shadow: 0 1px 2px rgb(183, 179, 179);
         flex-direction: column;
         align-items: center;
     }
@@ -761,7 +763,7 @@ footer address {
 
     .story-text-card {
         background-color: #ffffff;
-        padding: 10px 30px;
+        padding: 20px 30px;
         width: 54%;
         margin: 1% 0;
         border-radius: 3px;
@@ -827,19 +829,11 @@ footer address {
         width: 100%;
     }
 
-    #story-ten span {
-        font-weight: 700;
-    }
-
     /* Kontakta oss på tablets */
-    .contact-wrapper {
-        width: 95%;
-        margin: 30px auto;
-    }
-
     /* Sektion med öppettider och kontaktuppgifter */
     #hours-contact-section {
-        margin-bottom: 30px;
+        width: 95%;
+        margin: 30px auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -880,6 +874,8 @@ footer address {
 
     /* Formulär */
     #form-section {
+        width: 95%;
+        margin: 30px auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -1172,15 +1168,12 @@ footer address {
     }
 
     /* Kontakta oss sida desktop */
-    .contact-wrapper {
-        margin: 40px auto;
-        width: 90%;
-        max-width: 1200px;
-    }
-
     /* Sektion med öppettider och kontaktuppgifter */
     #hours-contact-section {
         flex-wrap: no-wrap;
+        width: 90%;
+        max-width: 1200px;
+        margin: 40px auto;
     }
 
     .hours-contact-text-content {
@@ -1219,7 +1212,10 @@ footer address {
 
     /* Formulär */
     #form-section {
+        width: 90%;
+        max-width: 1200px;
         padding: 30px;
+        margin: 40px auto;
     }
 
     #form-section h2 {
@@ -1247,8 +1243,8 @@ footer address {
 
 
     /* Sidfot på laptops och desktop */
-    footer div {
+    footer div,
+    footer address {
         margin: 1.5rem 1.5rem;
     }
-
 }

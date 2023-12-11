@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Meta tags for search engines-->
+    <!--Metataggar för sökmotorer -->
     <meta name="description" content="Vår florist kan skapa blomsterarrangemang för varje tillfälle. Kontakta oss.">
     <meta name="keywords"
         content="blomsterarrangemang strömsfors, blomsterkrans, blommor krans, blommor arrangemang, blomsterarrangemang, blomsterbinderi">
     <meta name="author" content="Johanna Petersson">
+    <!-- Sidans titel -->
     <title>Strömsfors Blomster - Arrangemang</title>
     <!--Länk till CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -16,7 +17,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
 </head>
 
 <body>
@@ -24,7 +25,8 @@
     <header>
         <!--Logga och meny-->
         <div class="logo-container">
-            <a aria-label="Strömsfors blomsters logga, gå till sidans topp" href="#top">Strömsfors Blomster
+            <!-- Klickbar logga av text, leder till startsidan. Ikonen är gömd för skärmläsare, enbart dekorativ -->
+            <a aria-label="Strömsfors blomsters logga, gå till startsidan" href="index.html">Strömsfors Blomster
                 <i aria-hidden="true" class="fa-brands fa-pagelines"></i>
             </a>
         </div>
@@ -32,8 +34,10 @@
         <input type="checkbox" id="nav-toggle" name="nav-toggle"
             aria-label="Checkbox to open and close navigation on mobile">
         <label for="nav-toggle" class="nav-toggle-label" aria-labelledby="nav-toggle">
+            <!-- Hamburgerikon från fontawesome-->
             <i class="fa-solid fa-bars"></i>
         </label>
+        <!-- Navigering med länkar till alla sidor och den aktuella sidan markerad -->
         <nav class="navbar">
             <a href="index.html" aria-label="Besök startsidan">Start</a>
             <a href="blomsterbud.html" aria-label="Besök sidan Blomsterbud">
@@ -51,8 +55,11 @@
     </header>
     <!--Sidans huvudsakliga innehåll-->
     <main>
+        <!-- Sektion med övergripande info om floristtjänsten -->
         <section id="binderi-intro-section">
+            <!-- div för styling -->
             <div class="binderi-top-container">
+                <!-- div för styling -->
                 <div class="binderi-intro-text">
                     <h1>Blomsterbinderi</h1>
                     <p>Vår florist skapar unika blomsterarrangemang som speglar dina önskemål.</p>
@@ -61,10 +68,12 @@
                     <br>
                     <p>Ta kontakt för en personlig konsultation.</p>
                 </div>
+                <!-- div för att styla bilden enklare -->
                 <div class="binderi-image-container">
                     <img src="assets/images/flower-bouquet.webp" alt="Bukett av gula rosor">
                 </div>
             </div>
+            <!-- div för styling -->
             <div class="binderi-intro-boxes">
                 <div>
                     <h2>Bröllop</h2>
@@ -72,27 +81,33 @@
                         bidrar
                         till att göra er dag speciell.</p>
                     <br>
+                    <!-- paragraf med länk till en sektion på sidan med ett id -->
                     <p>Läs mer om våra <a class="link-standard" href="#brollop-section"
                             aria-label="Länk till sektion om floristtjänster för bröllop längre ner på sidan">
                             floristtjänster för bröllop >>
                         </a>
                     </p>
                 </div>
+                <!-- div för styling -->
                 <div>
                     <h2>Begravning</h2>
                     <p>I sorgens ögonblick kan noggrant utvalda blommor visa respekt och hjälpa till att hedra den
                         avlidnes
                         minne.</p>
                     <br>
+                    <!-- paragraf med länk till en sektion på sidan med ett id -->
                     <p>Läs mer om våra <a class="link-standard" href="#begravn-section"
                             aria-label="Floristtjänster för begravningar, sektion längre ner på sidan.">
                             floristtjänster vid sorg >>
                         </a>
                     </p>
                 </div>
+                <!-- div för styling -->
                 <div>
+                    <!-- paragraf där viss text ska vara i fetstil -->
                     <p>Pris för dessa tjänster baseras på tids- och materialåtgång. <b>Vi utgår från er budget.</b></p>
                     <br>
+                    <!-- paragraf med länk till annan sida på webbplatsen -->
                     <p>Kontakta oss vid intresse. Du hittar kontaktuppgifter längst ner på
                         sidan, eller på sidan
                         <a class="link-standard" href="kontakt.html"
@@ -103,16 +118,20 @@
                 </div>
             </div>
         </section>
+        <!-- Sektion om floristtjänster vid bröllop -->
         <section id="brollop-section">
+            <!-- En bild för att tydligare markera bröllop/begravning som olika sektioner -->
             <div class="arrangemang-divide-container border-bottom">
                 <img src="assets/images/divider.webp">
             </div>
+            <!-- div för styling -->
             <div class="brollop-begr-intro-text">
                 <h2>Bröllop</h2>
                 <p>Med noggrannhet och hjärta formar vi arrangemang som pryder ert speciella ögonblick, från
                     knapphålsblomma
                     till bordsdekoration och brudbukett.</p>
             </div>
+            <!-- div för att styla en grupp av bilder, där varje bild också ligger i en div för enklare styling -->
             <div class="gallery-container">
                 <div class="gallery-image-container">
                     <img src="assets/images/bridal-bouquet.webp" alt="Brudbukett med vita blommor">
@@ -143,21 +162,28 @@
             <p>Kom förbi butiken, eller ring och boka en tid, så tar vi ett första, givetvis förutsättningslöst, samtal.
             </p>
             <br>
-            <p>Du finner våra kontaktuppgifter längst ner på sidan eller på sidan <a class="link-standard"
-                    href="kontakt.html">Kontakta oss >></a>.</p>
+            <!-- paragraf med länk till sida på webbplatsen -->
+            <p>Du finner våra kontaktuppgifter längst ner på sidan eller på sidan
+                <a class="link-standard" href="kontakt.html">Kontakta oss >></a>.
+            </p>
+            <!-- Bild som avgränsar sektionerna bröllop/begravning tydligare -->
             <div class="arrangemang-divide-container border-top">
                 <img src="assets/images/divider.webp">
             </div>
         </section>
+        <!-- Sektion om floristtjänster vid begravning -->
         <section id="begravn-section">
+            <!-- avgränsande bild -->
             <div class="arrangemang-divide-container border-bottom">
                 <img src="assets/images/divider.webp">
             </div>
+            <!-- div för styling -->
             <div class="brollop-begr-intro-text">
                 <h2>Begravningsblommor</h2>
                 <p>I sorgens stunder blir blommor en viktig källa till tröst och skönhet, en symbol för det outtalade.
                 </p>
             </div>
+            <!-- div för att styla en grupp bilder, som ovan -->
             <div class="gallery-container">
                 <div class="gallery-image-container">
                     <img src="assets/images/flowers-casket.webp"
@@ -184,10 +210,13 @@
             <p>Att planera och ta beslut i en tid av sorg kan självklart kännas svårt. Välj själv hur
                 involverad du vill vara i arrangemangets utformning.</p>
             <br>
-            <p>Du finner våra kontaktuppgifter längst ner på sidan eller på sidan <a class="link-standard"
-                    href="kontakt.html" aria-label="Kontakta oss. Gå till kontakta-oss-sidan">
-                    Kontakta oss >></a>.
+            <!-- pargraf med länk till sida på webbplatsen -->
+            <p>Du finner våra kontaktuppgifter längst ner på sidan eller på sidan
+                <a class="link-standard" href="kontakt.html" aria-label="Kontakta oss. Gå till kontakta-oss-sidan">
+                    Kontakta oss >>
+                </a>.
             </p>
+            <!-- Avgränsande bild -->
             <div class="arrangemang-divide-container border-top">
                 <img src="assets/images/divider.webp">
             </div>
@@ -195,24 +224,20 @@
     </main>
     <!--Sidfot-->
     <footer>
-        <div>
-            <address>
-                <b>Tlf:</b> 012-3456-789<br>
-                info@stromsforsblomster.com<br>
-                <br>
-                <b>Adress: </b>
-                Hittepåg. 15 <br>
-                12345 Strömsfors
-            </address>
-        </div>
-        <div>
-            <address>
-                <b>Ord öppettider:</b><br>
-                Mån-Fre: 9-17<br>
-                Lör: 10-15<br>
-                Sön: Stängt
-            </address>
-        </div>
+        <address>
+            <b>Tlf:</b> 012-3456-789<br>
+            info@stromsforsblomster.com<br>
+            <br>
+            <b>Adress: </b>
+            Hittepåg. 15 <br>
+            12345 Strömsfors
+        </address>
+        <address>
+            <b>Ord öppettider:</b><br>
+            Mån-Fre: 9-17<br>
+            Lör: 10-15<br>
+            Sön: Stängt
+        </address>
         <div id="footer-copyright">
             <p>&copy;Strömsfors Blomster AB</p>
         </div>

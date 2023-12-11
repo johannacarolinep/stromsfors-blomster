@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Meta tags for search engines-->
+    <!--Metataggar för sökmotorer -->
     <meta name="description" content="Vi hjälper dig att skicka blommor till någon du bryr dig om!">
     <meta name="keywords" content="blomsterbud strömsfors, skicka blommor strömsfors, blombud strömsfors">
     <meta name="author" content="Johanna Petersson">
+    <!-- Sidans titel -->
     <title>Strömsfors Blomster - Blomsterbud</title>
     <!--Länk till CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -15,7 +16,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
 </head>
 
 <body>
@@ -23,7 +24,8 @@
     <header>
         <!--Logga och meny-->
         <div class="logo-container">
-            <a aria-label="Strömsfors blomsters logga, gå till sidans topp" href="#top">Strömsfors Blomster
+            <!-- Klickbar logga av text, leder till startsidan. Ikonen är gömd för skärmläsare, enbart dekorativ -->
+            <a aria-label="Strömsfors blomsters logga, gå till startsidan" href="index.html">Strömsfors Blomster
                 <i aria-hidden="true" class="fa-brands fa-pagelines"></i>
             </a>
         </div>
@@ -31,8 +33,10 @@
         <input type="checkbox" id="nav-toggle" name="nav-toggle"
             aria-label="Checkbox to open and close navigation on mobile">
         <label for="nav-toggle" class="nav-toggle-label" aria-labelledby="nav-toggle">
+            <!-- Ikon från fontawesome -->
             <i class="fa-solid fa-bars"></i>
         </label>
+        <!-- Navigering -->
         <nav class="navbar">
             <a href="index.html" aria-label="Besök startsidan">Start</a>
             <a href="blomsterbud.html" aria-label="Besök sidan Blomsterbud">
@@ -51,84 +55,97 @@
     </header>
     <!--Sidans huvudsakliga innehåll-->
     <main>
+        <!-- En längre artikel om företagets historia, kan fungera som en fristående text -->
         <article class="story-article">
             <h1 id="story-one">En blomstrande tradition sedan 1923</h1>
+            <!-- div för styling -->
             <div id="story-two" class="story-text-card">
                 <h2>Det första fröet</h2>
-                <p>Året var 1923 när Anna och Gunnar Ohlsson sådde fröet till det som skulle bli en långlivad
+                <p>
+                    Året var 1923 när Anna och Gunnar Ohlsson sådde fröet till det som skulle bli en långlivad
                     familjetradition, och slog upp dörrarna till ortens nya handelsträdgård, Strömsfors Blomster.
                 </p>
             </div>
+            <!-- div för styling -->
             <div id="story-three" class="story-image-card">
                 <img alt="Gammalt foto på Anna och Gunnar Ohlsson, utanför butiken"
                     src="assets/images/shopkeepers.webp">
             </div>
+            <!-- div för styling -->
             <div id="story-five" class="story-text-card">
-                <p>I begynnelsen var Strömsfors Blomster en enkel butik som erbjöd de lokala invånarna möjligheten att
+                <p>
+                    I begynnelsen var Strömsfors Blomster en enkel butik som erbjöd de lokala invånarna möjligheten att
                     köpa färska grönsaker och trädgårdsplantor från Annas och Gunnars egen lilla odling. I en tid då
                     många av de lokala invånarna förlitade sig till stor del på självförsörjningen var tillskottet
                     uppskattat, och det gick bra för paret.
                 </p>
             </div>
+            <!-- div för styling -->
             <div id="story-four" class="story-image-card card-left-side">
                 <img alt="Gammalt foto inuti butiken, visar grönsaker till försäljning"
                     src="assets/images/vegetables.webp">
             </div>
+            <!-- div för styling -->
             <div id="story-six" class="story-text-card">
                 <h2>Butiken utökas</h2>
-                <p>År 1934 valde Anna och Gunnar att satsa fullt ut på sin verksamhet. Butiken utökades, man fick flera
+                <p>
+                    År 1934 valde Anna och Gunnar att satsa fullt ut på sin verksamhet. Butiken utökades, man fick flera
                     nya leverantörer, och det som en gång var en sidoverksamhet blev nu deras huvudfokus och
                     heltidssysselsättning. Nu breddades gradvis också sortimentet, med allt från vackra snittblommor
                     till omsorgsfullt utvalda trädgårdsdekorationer.
                 </p>
             </div>
+            <!-- div för styling -->
             <div id="story-seven" class="story-image-card">
                 <img alt="Gammalt foto inuti butiken, visar en kund som handlar blommor"
                     src="assets/images/flowers-forties.webp">
             </div>
+            <!-- div för styling -->
             <div id="story-nine" class="story-text-card">
                 <h2>Ett familjeföretag</h2>
-                <p>Genom åren har Strömsfors Blomster genomgått förändringar, men kärnan har förblivit densamma. Sedan
+                <p>
+                    Genom åren har Strömsfors Blomster genomgått förändringar, men kärnan har förblivit densamma. Sedan
                     den dag då Anna och Gunnar sådde de första fröna har flera generationer av familjen Ohlsson tagit
                     över rodret, och varje medlem har bidragit till att bevara företagets arv, samtidigt som man
                     anpassat sig till de skiftande behoven i samhället.
                 </p>
             </div>
+            <!-- div för styling -->
             <div id="story-eight" class="story-image-card">
                 <img alt="Inuti butiken i nutid, an blomstergrupp, och ett butiksbiträde i bakgrunden"
                     src="assets/images/butiken-nutid.webp">
             </div>
+            <!-- div för styling -->
             <div id="story-ten" class="story-text-card">
-                <p>Tiderna har ändrats, men än idag förblir vår uppgift densamma. Vi vill tillgodose ortens behov inom
+                <p>
+                    Tiderna har ändrats, men än idag förblir vår uppgift densamma. Vi vill tillgodose ortens behov inom
                     trädgård och blomster utifrån vår bästa förmåga - med god service, hög kvalitet och ett relevant
                     utbud.
-                    <span>Vi ser fram emot att fortsätta vår blomstrande resa tillsammans med er. Tack för att ni
-                        varit en del av vår långlivade familjetradition.
-                    </span>
+                </p>
+                <br>
+                <p class="article-last-p">
+                    Vi ser fram emot att fortsätta vår blomstrande resa tillsammans med er. Tack
+                    för att ni varit en del av vår långlivade familjetradition.
                 </p>
             </div>
         </article>
     </main>
     <!--Sidfot-->
     <footer>
-        <div>
-            <address>
-                <b>Tlf:</b> 012-3456-789<br>
-                info@stromsforsblomster.com<br>
-                <br>
-                <b>Adress: </b>
-                Hittepåg. 15 <br>
-                12345 Strömsfors
-            </address>
-        </div>
-        <div>
-            <address>
-                <b>Ord öppettider:</b><br>
-                Mån-Fre: 9-17<br>
-                Lör: 10-15<br>
-                Sön: Stängt
-            </address>
-        </div>
+        <address>
+            <b>Tlf:</b> 012-3456-789<br>
+            info@stromsforsblomster.com<br>
+            <br>
+            <b>Adress: </b>
+            Hittepåg. 15 <br>
+            12345 Strömsfors
+        </address>
+        <address>
+            <b>Ord öppettider:</b><br>
+            Mån-Fre: 9-17<br>
+            Lör: 10-15<br>
+            Sön: Stängt
+        </address>
         <div id="footer-copyright">
             <p>&copy;Strömsfors Blomster AB</p>
         </div>

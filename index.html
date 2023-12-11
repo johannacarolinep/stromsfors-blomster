@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Meta tags for search engines-->
+    <!--Metataggar för sökmotorer -->
     <meta name="description" content="Strömsfors Blomster - Blomsterbutik & handelsträdgård i Strömsfors">
     <meta name="keywords"
         content="blommor strömsfors, blomsterbutik strömsfors, blombutik strömsfors, blomsterbud strömsfors">
     <meta name="author" content="Johanna Petersson">
+    <!-- Sidans titel -->
     <title>Strömsfors Blomster</title>
     <!--Länk till CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -16,7 +17,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
 </head>
 
 <body>
@@ -24,6 +25,7 @@
     <header>
         <!--Logga och meny-->
         <div class="logo-container">
+            <!-- Klickbar logga av text, leder till sidans topp. Ikonen är gömd för skärmläsare, enbart dekorativ -->
             <a aria-label="Strömsfors blomsters logga, gå till sidans topp" href="#top">Strömsfors Blomster
                 <i aria-hidden="true" class="fa-brands fa-pagelines"></i>
             </a>
@@ -32,8 +34,10 @@
         <input type="checkbox" id="nav-toggle" name="nav-toggle"
             aria-label="Checkbox to open and close navigation on mobile">
         <label for="nav-toggle" class="nav-toggle-label" aria-labelledby="nav-toggle">
+            <!-- Ikon från fontawesome -->
             <i class="fa-solid fa-bars"></i>
         </label>
+        <!-- Navigering -->
         <nav class="navbar">
             <a href="index.html" id="active" aria-label="Startsidan. Du befinner dig på den här sidan.">
                 Start
@@ -53,18 +57,23 @@
     <!--Sidans huvudsakliga innehåll-->
     <main>
 
-        <!--Hero section-->
+        <!--Hero-sektion med stor bakgrundsbild och en "overlay" med text i-->
         <section id="hero">
+            <!-- Utgör "overlay" ovanpå bakgrundsbilden -->
             <div id="hero-text-container">
                 <p>Varmt välkomna till</p>
+                <!-- Innehåller en ikon som är gömd för skärmläsare, enbart dekorativ -->
                 <h1 id="hero-logo">Strömsfors Blomster <i aria-hidden="true" class="fa-brands fa-pagelines"></i></h1>
                 <p>Blomster & odling sedan 1923</p>
             </div>
         </section>
-
+        <!-- Div för att kunna styla content i två kolumner -->
         <div class="two-columns">
+            <!-- Sektion som samlar alla kort med erbjudanden/nyheter -->
             <section id="offers-section">
+                <!-- div för styling -->
                 <div class="offers-flex-container">
+                    <!-- div för styling -->
                     <div class="offers-text-container offers-text-right">
                         <h2>Julen är (nästan) här!</h2>
                         <p>Nu har årets vackra julblommor anlänt till butiken! Skapa julstämning i hemmet med våra
@@ -74,15 +83,19 @@
                         <br>
                         <p>Vi ses i butiken!</p>
                     </div>
+                    <!-- div för att kunna styla bilden lättare -->
                     <div class="offers-image-container">
                         <img alt="Röd julstjärna med glitter" src="assets/images/poinsettia-glitter.webp">
                     </div>
                 </div>
+                <!-- div för styling -->
                 <div>
                     <h2>3 julstjärnor for 149 kr!</h2>
                     <p>Köp 3 julstjärnor för 149 kr. Styckpris: 69 kr. Spara 58 kr!</p>
                 </div>
+                <!-- div för styling -->
                 <div class="offers-flex-container">
+                    <!-- div för styling -->
                     <div class="offers-text-container offers-text-left">
                         <h2>Har du sett våra vackra kransar?</h2>
                         <p>Vill du komma i <b>ännu mer</b> julstämning? Då ska du kika på våra kransar som vår
@@ -90,12 +103,15 @@
                         <br>
                         <p>Julkransarna är perfekta som present till någon du vill skämma bort.</p>
                     </div>
+                    <!-- div för att kunna styla bilden lättare-->
                     <div class="offers-image-container">
                         <img alt="Vår florist håller upp en julkrans" src="assets/images/wreath.webp">
                     </div>
                 </div>
             </section>
+            <!-- Sektion för öppettider och kontaktuppgifter-->
             <section id="details-section">
+                <!-- div för styling -->
                 <div>
                     <h3>Öppettider:</h3>
                     <p>Vardagar: 9-17</p>
@@ -110,41 +126,40 @@
                     <h4>Extraöppet!</h4>
                     <p>I december har vi öppet till kl 18 på vardagar, så ni hinner hit efter jobbet!</p>
                 </div>
+                <!-- div för styling -->
                 <div>
                     <h3>Följ oss på sociala medier:</h3>
+                    <!-- Länkar/klickbara ikoner till sociala medier. Öppnas i ny flik. Den nya sidan får inte tillgång -->
                     <a href="https://www.facebook.com/" target="_blank" rel="noopener"
                         aria-label="Besök vår Facebook-sida (öppnas i en ny flik)">
+                        <!-- Ikon från fontawesome-->
                         <i class="fa-brands fa-facebook"></i>
                     </a>
                     <a href="https://www.instagram.com/" target="_blank" rel="noopener"
                         aria-label="Besök vår Instagram (öppnas i en ny flik)">
+                        <!-- Ikon från fontawesome-->
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                 </div>
             </section>
         </div>
-
     </main>
     <!--Sidfot-->
     <footer>
-        <div>
-            <address>
-                <b>Tlf:</b> 012-3456-789<br>
-                info@stromsforsblomster.com<br>
-                <br>
-                <b>Adress: </b>
-                Hittepåg. 15 <br>
-                12345 Strömsfors
-            </address>
-        </div>
-        <div>
-            <address>
-                <b>Ord öppettider:</b><br>
-                Mån-Fre: 9-17<br>
-                Lör: 10-15<br>
-                Sön: Stängt
-            </address>
-        </div>
+        <address>
+            <b>Tlf:</b> 012-3456-789<br>
+            info@stromsforsblomster.com<br>
+            <br>
+            <b>Adress: </b>
+            Hittepåg. 15 <br>
+            12345 Strömsfors
+        </address>
+        <address>
+            <b>Ord öppettider:</b><br>
+            Mån-Fre: 9-17<br>
+            Lör: 10-15<br>
+            Sön: Stängt
+        </address>
         <div id="footer-copyright">
             <p>&copy;Strömsfors Blomster AB</p>
         </div>

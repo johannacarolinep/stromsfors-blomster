@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Meta tags for search engines-->
+    <!-- Metataggar för sökmotorer -->
     <meta name="description" content="Vi hjälper dig att skicka blommor till någon du bryr dig om!">
     <meta name="keywords" content="blomsterbud strömsfors, skicka blommor strömsfors, blombud strömsfors">
     <meta name="author" content="Johanna Petersson">
+    <!-- Sidans titel -->
     <title>Strömsfors Blomster - Blomsterbud</title>
     <!--Länk till CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -15,7 +16,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
 </head>
 
 <body>
@@ -23,7 +24,8 @@
     <header>
         <!--Logga och meny-->
         <div class="logo-container">
-            <a aria-label="Strömsfors blomsters logga, gå till sidans topp" href="#top">Strömsfors Blomster
+            <!-- Klickbar logga av text, leder till startsidan. Ikonen är gömd för skärmläsare, enbart dekorativ -->
+            <a aria-label="Strömsfors blomsters logga, gå till startsidan." href="index.html">Strömsfors Blomster
                 <i aria-hidden="true" class="fa-brands fa-pagelines"></i>
             </a>
         </div>
@@ -31,8 +33,10 @@
         <input type="checkbox" id="nav-toggle" name="nav-toggle"
             aria-label="Checkbox to open and close navigation on mobile">
         <label for="nav-toggle" class="nav-toggle-label" aria-labelledby="nav-toggle">
+            <!-- Ikon från fontawesome -->
             <i class="fa-solid fa-bars"></i>
         </label>
+        <!-- Navigering -->
         <nav class="navbar">
             <a href="index.html" aria-label="Besök startsidan">Start</a>
             <a href="blomsterbud.html" id="active" aria-label="Blomsterbud, du befinner dig på denna sidan">
@@ -49,8 +53,11 @@
     </header>
     <!--Sidans huvudsakliga innehåll-->
     <main class="blomsterbud-main">
+        <!-- Div för styling -->
         <div class="blomsterbud-wrapper">
+            <!-- Sektion för text och bild om tjänsten -->
             <section id="blomsterbud-text-section">
+                <!-- Div för styling -->
                 <div class="blomsterbud-text">
                     <h1>Överraska och sprid glädje med ett blomsterbud</h1>
                     <p>Skäm bort dina nära och kära med blommor levererade till dörren.</p>
@@ -62,20 +69,28 @@
                         inom
                         kommunen.</p>
                 </div>
+                <!-- Div för att lättare kunna styla bilden -->
                 <div class="blomsterbud-image-container">
                     <img alt="Leende kvinna med blombukett" src="assets/images/receiving-flowers.webp">
                 </div>
             </section>
+            <!-- Sektion med viktiga detaljer om tjänsten -->
             <section id="blomsterbud-details-section">
+                <!-- En rubrik som är gömd. Onödig när man han visuell kontext. Men läses av skärmläsare -->
+                <h2 class="hidden-heading">Detaljer om vår tjänst "Blomsterbud"</h2>
+                <!-- div för styling -->
                 <div class="blomsterbud-details-box">
                     <p>Leverans inom kommunen</p>
                 </div>
+                <!-- div för styling -->
                 <div class="blomsterbud-details-box">
                     <p>Boka 3 dagar i förväg för att garantera leverans vid önskad tidpunkt</p>
                 </div>
+                <!-- div för styling -->
                 <div class="blomsterbud-details-box">
                     <p>Boka i butiken eller över telefon</p>
                 </div>
+                <!-- paragraf med länk i -->
                 <p class="blomsterbud-details-paragraph">Se kontaktuppgifter längst ner på sidan, eller besök sidan
                     <a class="link-standard" href="kontakt.html" aria-label="Kontakta oss">Kontakta oss >></a>
                 </p>
@@ -84,24 +99,20 @@
     </main>
     <!--Sidfot-->
     <footer>
-        <div>
-            <address>
-                <b>Tlf:</b> 012-3456-789<br>
-                info@stromsforsblomster.com<br>
-                <br>
-                <b>Adress: </b>
-                Hittepåg. 15 <br>
-                12345 Strömsfors
-            </address>
-        </div>
-        <div>
-            <address>
-                <b>Ord öppettider:</b><br>
-                Mån-Fre: 9-17<br>
-                Lör: 10-15<br>
-                Sön: Stängt
-            </address>
-        </div>
+        <address>
+            <b>Tlf:</b> 012-3456-789<br>
+            info@stromsforsblomster.com<br>
+            <br>
+            <b>Adress: </b>
+            Hittepåg. 15 <br>
+            12345 Strömsfors
+        </address>
+        <address>
+            <b>Ord öppettider:</b><br>
+            Mån-Fre: 9-17<br>
+            Lör: 10-15<br>
+            Sön: Stängt
+        </address>
         <div id="footer-copyright">
             <p>&copy;Strömsfors Blomster AB</p>
         </div>
