@@ -43,13 +43,13 @@ header {
     position: fixed;
     z-index: 99;
     background-color: #ffffff;
-    padding: 10px 15px;
+    padding: 10px 45px 10px 15px;
     width: 100%;
     /* En "skugga" så att header skiljer sig lite mer från main */
     box-shadow: 0 1px 2px rgb(183, 179, 179);
-    /* Delar upp loggan och hamburgerikonen */
+    /* Positionerar innehållet till vänster */
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     /* Centrerar innehållet horisontellt */
     align-items: baseline;
 }
@@ -110,20 +110,32 @@ nav {
     flex-direction: column;
 }
 
-/* Gömmer checkrutan för navigation på mobil */
+/* Gömmer checkrutan för navigation på mobil bakom dess etikett */
 #nav-toggle {
-    display: none;
+    height: 37.5px;
+    width: 27px;
+    position: absolute;
+    right: 15.5px;
+    z-index: -1;
 }
 
 /* Stil för hamburgerikonen */
 .nav-toggle-label {
     font-size: 2rem;
+    /* Lite större än checkrutan */
+    height: 38.5px;
+    width: 28px;
+    /* Vit bakgrundsfärg som döljer checkrutan bakom */
+    background-color: white;
+    position: absolute;
+    right: 15px;
 }
 
 /* Main på mobil */
 /* Flytta ner main under header */
 main {
-    margin-top: 60px;
+    margin-top: 56.5px;
+
     /* Gör så att main "växer" och trycker ner sidfot till botten */
     flex: 1 0 auto;
 }
@@ -628,8 +640,9 @@ footer address {
         justify-content: center;
     }
 
-    /* Gömmer hamburgerikonen som inte längre behövs */
-    .nav-toggle-label {
+    /* Gömmer hamburgerikonen och checkrutan som inte längre behövs */
+    .nav-toggle-label,
+    #nav-toggle {
         display: none;
     }
 
